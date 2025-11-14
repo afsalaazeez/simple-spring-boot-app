@@ -1,0 +1,1863 @@
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mrelative path directory object {"root":"","dir":"","base":"","ext":"","name":""}[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mSuccessfully created directory /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353[39m
+[14/11/2025, 5:25:53 PM] - [SIMPLE] - [97m********** Validating tokens and license **********[39m
+[14/11/2025, 5:25:53 PM] - [INFO] - [32mGenerating unit tests using JUnit5 framework[39m
+[14/11/2025, 5:25:53 PM] - [INFO] - [32mLicense is verified[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mClaude AI Token is verified[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mTest will timeout after 1 hour[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mLicense is invoked[39m
+[14/11/2025, 5:25:54 PM] - [SIMPLE] - [97m********** Generating Tests **********[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mSkipping downloading: RoostJavaASTParser.jar[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mcheckpoint-1[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress -Dspring-javaformat.skip=true compile with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mProject compiled successfully.[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.1 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.11 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mFollowing are the dependencies for the given code: org.springframework.boot[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.2 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mUpdating pom.xml[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mUpdated pom.xml with new dependencies: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mExecuting the command: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:00 PM] - [INTERNAL] - [36mCommand: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[36mExited with exitCode: 1[39m
+[36mstdout: [INFO] Scanning for projects...[39m
+[36m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[36m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[36m @ [39m
+[36m[ERROR] The build could not read 1 project -> [Help 1][39m
+[36m[ERROR]   [39m
+[36m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[36m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[36m[ERROR] [39m
+[36m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[36m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[36m[ERROR] [39m
+[36m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[36m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[36m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[36mstderr: [39m
+[14/11/2025, 5:26:00 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:02 PM] - [INTERNAL] - [36mCommand: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[36mExited with exitCode: 1[39m
+[36mstdout: [INFO] Scanning for projects...[39m
+[36m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[36m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[36m @ [39m
+[36m[ERROR] The build could not read 1 project -> [Help 1][39m
+[36m[ERROR]   [39m
+[36m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[36m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[36m[ERROR] [39m
+[36m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[36m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[36m[ERROR] [39m
+[36m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[36m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[36m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[36mstderr: [39m
+[14/11/2025, 5:26:02 PM] - [ERROR] - [31mError executing Maven validate command: [INFO] Scanning for projects...[39m
+[31m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[31m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[31m @ [39m
+[31m[ERROR] The build could not read 1 project -> [Help 1][39m
+[31m[ERROR]   [39m
+[31m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[31m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[31m[ERROR] [39m
+[31m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[31m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[31m[ERROR] [39m
+[31m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[31m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[31m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mSuccessfully reverted to original pom.xml content: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mParsing data from AST Parser...[39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/codeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-2.1 generateJavaUnitTest - filesList: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java,/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-2 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-3 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-4 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.13 :pass check /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.2 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.3 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.52 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.6 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-7 entitiy info DemoApplication[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-6 : entity [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-9.1 token limit main[39m
+[14/11/2025, 5:26:04 PM] - [WARNING] - [33mSkipping test generation for the main method.[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.13 :pass check /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.2 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.3 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.52 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.6 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-7 entitiy info HelloController[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-6 : entity [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-9.1 token limit hello[39m
+[14/11/2025, 5:26:04 PM] - [SIMPLE] - [97m~~~~~~~~~~ Generating test for the method: hello from the file src/main/java/com/example/demo/HelloController.java ~~~~~~~~~~[39m
+[14/11/2025, 5:26:04 PM] - [INTERNAL] - [36m[39m
+[36mGet Cache call[39m
+[36mSystemContentHash: fd79282333[39m
+[36mUserContentHash: e199641b39[39m
+[14/11/2025, 5:26:04 PM] - [INTERNAL] - [36m[39m
+[36mSystem content:[39m
+[36mYou are an experienced java programmer.[39m
+[36mUser content:[39m
+[36m[39m
+[36mDESCRIPTION:[39m
+[36m  - Write JUnit test scenarios for the below-provided method [39m
+[36m[39m
+[36mwith its class name as HelloController. Do not write test code to validate.[39m
+[36m  - Generate all test scenarios completely in english language, including all section headers and labels.[39m
+[36m  - Follow the natural text direction and formatting conventions of english (e.g., right-to-left for Hebrew/Arabic, left-to-right for English/Spanish, etc.).[39m
+[36m  """[39m
+[36m  public String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m} [39m
+[36m  """[39m
+[36m[39m
+[36mINSTRUCTIONS:  [39m
+[36m- Use these details to implement better scenarios[39m
+[36m  - The following is a list of imports[39m
+[36mimport org.springframework.web.bind.annotation.GetMapping;[39m
+[36mimport org.springframework.web.bind.annotation.RestController;[39m
+[36m[39m
+[36m   [39m
+[36m  The methods defined in the HelloController class are:[39m
+[36m[39m
+[36mpublic String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m}[39m
+[36m[39m
+[36mpublic String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m}[39m
+[36m   [39m
+[36m  [39m
+[36mTASK:[39m
+[36m  - Generate Test Scenarios completely in english language using the format specified below:[39m
+[36m - Translate ALL section headers, labels, and terms (including Scenario, Details, TestName, Description, Execution, Arrange, Act, Assert, Validation) into english:[39m
+[36m - IMPORTANT: Format the output according to english writing conventions:[39m
+[36m   * For RTL languages (Hebrew, Arabic, Urdu, etc.): Use right-to-left text direction and appropriate formatting[39m
+[36m   * For LTR languages (English, Spanish, French, etc.): Use left-to-right text direction[39m
+[36m   * For languages with specific formatting rules (Chinese, Japanese, etc.): Follow their traditional formatting conventions[39m
+[36m [39m
+[36m [39m
+[36m  """ [39m
+[36m  Scenario [Number]: [Brief Description of the Test][39m
+[36m[39m
+[36m  Details:  [39m
+[36m    TestName: testScenarioInCamelCase(ensure to keep the camelCase format without the Test prefix).[39m
+[36m    Description: An explanation of what the test is meant to check, including the specific functionality and the target scenario. [39m
+[36m  Execution:[39m
+[36m    Arrange: Set up any required data, mocks, or test doubles. [39m
+[36m    Act: Invoke the target method with the appropriate parameters or conditions. [39m
+[36m    Assert: Use JUnit assertions to compare actual results against expected outcomes.[39m
+[36m  Validation: [39m
+[36m    Clarify what the assertion aims to verify and the reason behind the expected result. [39m
+[36m    Elaborate on the significance of the test in the context of application behavior or business logic.[39m
+[36m  """ [39m
+[36mReplace testScenarioInCamelCase with an actual test method name, ensure to keep the camelCase format without the Test prefix. [39m
+[36mReplace [Number] with the scenario number and [Brief Description of the Test] with the specifics of what the test is about.[39m
+[36m[39m
+[36m[39m
+[36m - Generate as many test scenarios as possible for the given method, ensuring to cover edge cases and error handling.[39m
+[36m - hello is the method you need to create test scenarios for.[39m
+[36m[39m
+[36m  Ensure that generated test scenarios accurately reflect the given method parameters and return types.[39m
+[36m [39m
+[36m [39m
+[36m NOTE: [39m
+[36m  1. While generating test scenarios for the mentioned method, use only existing public methods, public fields, import statements that are provided above. Do not assume the existence of any getter or setter methods that are not explicitly provided. If a method is not present in the entity, do not reference it in the test scenario.[39m
+[36m  2. Write scenarios quoted inside triple backticks.[39m
+[36m  3. IMPORTANT: Translate ALL section headers, labels, and structural terms into english. Only keep actual Java method names and technical code elements in their original form.[39m
+[36m  4. The entire output should be in english including all descriptive text and section labels.[39m
+[36m  5. CRITICAL: Follow the natural reading direction of english:[39m
+[36m  - For Hebrew/Arabic/Persian/Urdu: Format text from right-to-left[39m
+[36m  - For Chinese/Japanese: Consider vertical or horizontal formatting as appropriate[39m
+[36m  - For English/European languages: Use standard left-to-right formatting[39m
+[36m  - Maintain proper punctuation and spacing conventions for the chosen language[39m
+[36m  6. When formatting RTL languages, ensure proper alignment and text flow while keeping code elements (like method names) in their standard format.[39m
+[36m[39m
+[36mGeneration type: code[39m
+[36mAi Model: claude-haiku-4-5-20251001[39m
+[36mAi Temperature: 0.3[39m
+[36m[39m
+[14/11/2025, 5:26:04 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: fd79282333,[39m
+[36m      user_prompt_hash: e199641b39,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:04 PM] - [INTERNAL] - [36mCould not load response from cache server: AxiosError: Request failed with status code 404[39m
+[14/11/2025, 5:26:18 PM] - [INTERNAL] - [36mClaude AI response:[39m
+[36m```[39m
+[36mScenario 1: Verify hello() Method Returns Expected String[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsExpectedString[39m
+[36m  Description: This test verifies that the hello() method in the HelloController class returns the exact string "Hello, Spring Boot!". This is a fundamental test to ensure the method produces the correct output as designed.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the hello() method.[39m
+[36m  Act: Invoke the hello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Hello, Spring Boot!".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the hello() method returns the correct hardcoded string. The test ensures that the basic functionality of the method is working as intended and that no unexpected modifications have been made to the return value. This is critical for validating the core behavior of the REST endpoint.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 2: Verify hello() Method Returns Non-Null Value[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsNonNullValue[39m
+[36m  Description: This test ensures that the hello() method never returns a null value. This is important for preventing NullPointerException errors when the response is processed by client applications.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Call the hello() method and store the result.[39m
+[36m  Assert: Use assertNotNull() to verify that the returned value is not null.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion guarantees that the method always returns a valid string object. Returning null could cause downstream errors in REST API consumers. This test protects against accidental code changes that might introduce null returns.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 3: Verify hello() Method Returns Non-Empty String[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsNonEmptyString[39m
+[36m  Description: This test validates that the hello() method returns a string that is not empty. An empty string response would be invalid for this greeting endpoint.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Invoke the hello() method and capture the result.[39m
+[36m  Assert: Use assertTrue() with a length check or assertFalse() with isEmpty() to confirm the string is not empty.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures that the response contains actual content. An empty string would indicate a malformed response that could confuse API clients. This test prevents regression where the method might accidentally return an empty string.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 4: Verify hello() Method Returns Correct String Length[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsCorrectStringLength[39m
+[36m  Description: This test verifies that the returned string has the expected length of 18 characters, matching "Hello, Spring Boot!".[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Call the hello() method and obtain the result string.[39m
+[36m  Assert: Use assertEquals() to verify that the length of the returned string equals 18.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms the exact length of the response string. This test helps catch any accidental modifications to the string content or whitespace changes. It provides an additional layer of validation beyond simple string equality.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 5: Verify hello() Method Returns Consistent Results on Multiple Calls[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsConsistentResultsOnMultipleCalls[39m
+[36m  Description: This test ensures that calling the hello() method multiple times returns the same string value each time, confirming the method is deterministic and stateless.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Call the hello() method three times and store each result.[39m
+[36m  Assert: Use assertEquals() to verify that all three returned values are identical to each other and to the expected string.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion validates that the method is stateless and produces consistent output regardless of how many times it is invoked. This is essential for REST endpoints that should behave predictably across multiple requests. The test ensures no internal state or external factors affect the output.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 6: Verify hello() Method Does Not Modify Input State[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloMethodDoesNotModifyInputState[39m
+[36m  Description: This test confirms that the hello() method, which takes no parameters, does not have side effects that could impact the controller's state or other components.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class and establish a baseline state.[39m
+[36m  Act: Invoke the hello() method.[39m
+[36m  Assert: Verify that the controller instance remains in the same state after the method call.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures the method is pure and does not introduce side effects. For a stateless REST controller, this is a critical property. The test prevents accidental introduction of state modifications that could cause issues in concurrent request scenarios.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 7: Verify hello() Method Returns String with Correct Capitalization[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsStringWithCorrectCapitalization[39m
+[36m  Description: This test validates that the returned string maintains the exact capitalization pattern: "Hello, Spring Boot!" with proper uppercase letters at the beginning of each word.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Call the hello() method and capture the result.[39m
+[36m  Assert: Use assertEquals() to verify the exact string with proper capitalization, or use assertTrue() with a regex pattern match.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures the response maintains professional formatting with correct capitalization. This is important for API responses that are displayed to users or logged. The test catches any accidental case modifications that could affect the user experience.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 8: Verify hello() Method Returns String with Correct Punctuation[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsStringWithCorrectPunctuation[39m
+[36m  Description: This test ensures that the returned string includes the correct punctuation, specifically the comma after "Hello" and the exclamation mark at the end.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class.[39m
+[36m  Act: Invoke the hello() method and store the result.[39m
+[36m  Assert: Use assertTrue() to verify the string contains a comma and ends with an exclamation mark, or use assertEquals() for exact match.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the response maintains proper punctuation and grammar. Punctuation is essential for professional API responses. This test prevents accidental removal or modification of punctuation marks that could affect the message clarity.[39m
+[36m```[39m
+[14/11/2025, 5:26:18 PM] - [INTERNAL] - [36mClaude AI parsed response:[39m
+[36mScenario 1: Verify hello() Method Returns Expected String[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsExpectedString[39m
+[36m  Description: This test verifies that the hello() method in the HelloController class returns the exact string "Hello, Spring Boot!". This is a fundamental test to ensure the method produces the correct output as designed.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the hello() method.[39m
+[36m  Act: Invoke the hello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Hello, Spring Boot!".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the hello() method returns the correct hardcoded string. The test ensures that the basic functionality of the method is working as intended and that no unexpected modifications have been made to the return value. This is critical for validating the core behavior of the REST endpoint.[39m
+[36m[39m
+[14/11/2025, 5:26:18 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: fd79282333,[39m
+[36m      system_prompt_content: systemContent,[39m
+[36m      user_prompt_hash: e199641b39,[39m
+[36m      user_prompt_content: userContent,[39m
+[36m      response: aiResponse,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:18 PM] - [INTERNAL] - [36m[39m
+[36mPost Cache Call[39m
+[36mSystemContentHash: fd79282333[39m
+[36mUserContentHash: e199641b39[39m
+[14/11/2025, 5:26:19 PM] - [INTERNAL] - [36mSuccessfully added AI response to the cache server for the given system and user prompts[39m
+[14/11/2025, 5:26:19 PM] - [INTERNAL] - [36m[39m
+[36mSystem content:[39m
+[36m[39m
+[36m[39m
+[36mYou are an AI assistant that generates comprehensive JUnit5 test cases for Java methods based on the provided method signature and test scenarios. Adhere to the following guidelines:[39m
+[36m[39m
+[36m- Generate test cases strictly in code blocks without explanations.[39m
+[36m  - Create test cases that thoroughly test various aspects of the method, including success and failure cases, edge cases, and error handling.[39m
+[36m  [39m
+[36m  - Include assertions in each test case to verify the expected output matches the actual output.[39m
+[36m  - Mock external services and focus on testing the logic and execution of code for different scenarios.[39m
+[36m  - Use annotations to prepare the system for tests.[39m
+[36m  - Write tests considering real-world scenarios.[39m
+[36m  - Ensure the generated code is Java compilable and follows good coding practices.[39m
+[36m  - When encountering live values, check if they are not null and are valid within a valid range.[39m
+[36m  - Use appropriate import statements based on the provided dependencies and class information.[39m
+[36m  - Use the provided class name, method signatures, fields, and constructor details to generate the test cases.[39m
+[36m  - Maintain the casing of the existing function names and objects.[39m
+[36m  - Use package declaration as "com.example.demo"[39m
+[36m  - Generated class name should be exactly "HelloControllerHelloTest"[39m
+[36m  - Add imports for the current class and embedded structs or enums if they are referred to in the tests.[39m
+[36m  - Use only the annotations that are relevant to the testing framework being used, avoid any unnecessary annotations in the generated test class.[39m
+[36m  - Do not include the @Generated annotation or any similar annotations that indicate the code is generated by a tool.[39m
+[36m  - If a test is requiring a user input, use dummy values instead of actually taking input from the user[39m
+[36m[39m
+[36m[39m
+[36mUser content:[39m
+[36m[39m
+[36m    [39m
+[36m  [39m
+[36m  - use appropriate import statements:[39m
+[36mimport org.springframework.web.bind.annotation.GetMapping;[39m
+[36mimport org.springframework.web.bind.annotation.RestController;[39m
+[36m  [39m
+[36m  [39m
+[36m  The methods defined in the HelloController class are:[39m
+[36m[39m
+[36mpublic String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m}[39m
+[36m[39m
+[36mpublic String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m}[39m
+[36m  [39m
+[36m  [39m
+[36m  [39m
+[36m  - [39m
+[36m  [39m
+[36m  - Take the following dependencies in account while generating the tests for given repo in the format {name: , code: , nested dependency: }.[39m
+[36m  - Dependencies: [ 'org.springframework.boot' ][39m
+[36m  - Consider the provided test case scenarios in a table-driven test approach[39m
+[36m  [39m
+[36m  - Consider below test case scenarios in a table driven test:[39m
+[36m  - TEST SCENARIOS:[39m
+[36m	Scenario 1: Verify hello() Method Returns Expected String[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: helloReturnsExpectedString[39m
+[36m  Description: This test verifies that the hello() method in the HelloController class returns the exact string "Hello, Spring Boot!". This is a fundamental test to ensure the method produces the correct output as designed.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the hello() method.[39m
+[36m  Act: Invoke the hello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Hello, Spring Boot!".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the hello() method returns the correct hardcoded string. The test ensures that the basic functionality of the method is working as intended and that no unexpected modifications have been made to the return value. This is critical for validating the core behavior of the REST endpoint.[39m
+[36m[39m
+[36m[39m
+[36m  - Add tags to tests based on their specific scenarios. The tags can only be categorised as valid, invalid, boundary or integration. Ensure tags are correctly formatted as @Tag("exampleTag")[39m
+[36m  - Generate comprehensive test cases for the following Java method:[39m
+[36m[39m
+[36mpublic String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m} [39m
+[36m[39m
+[36mwith its class name as HelloController.[39m
+[36m  [39m
+[36m   [39m
+[36mGeneration type: code[39m
+[36mAi Model: claude-haiku-4-5-20251001[39m
+[36mAi Temperature: 0.3[39m
+[36m[39m
+[14/11/2025, 5:26:19 PM] - [INTERNAL] - [36m[39m
+[36mGet Cache call[39m
+[36mSystemContentHash: ba475c3213[39m
+[36mUserContentHash: afe21036f6[39m
+[14/11/2025, 5:26:19 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: ba475c3213,[39m
+[36m      user_prompt_hash: afe21036f6,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:19 PM] - [INTERNAL] - [36mCould not load response from cache server: AxiosError: Request failed with status code 404[39m
+[14/11/2025, 5:26:27 PM] - [INTERNAL] - [36mClaude AI response:[39m
+[36m```java[39m
+[36mpackage com.example.demo;[39m
+[36m[39m
+[36mimport org.junit.jupiter.api.BeforeEach;[39m
+[36mimport org.junit.jupiter.api.DisplayName;[39m
+[36mimport org.junit.jupiter.api.Tag;[39m
+[36mimport org.junit.jupiter.api.Test;[39m
+[36m[39m
+[36mimport static org.junit.jupiter.api.Assertions.*;[39m
+[36m[39m
+[36m@DisplayName("HelloController - hello() Method Tests")[39m
+[36mclass HelloControllerHelloTest {[39m
+[36m[39m
+[36m    private HelloController helloController;[39m
+[36m[39m
+[36m    @BeforeEach[39m
+[36m    void setUp() {[39m
+[36m        helloController = new HelloController();[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns expected string")[39m
+[36m    void helloReturnsExpectedString() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String actualOutput = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedOutput, actualOutput, [39m
+[36m            "hello() method should return 'Hello, Spring Boot!'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns non-null value")[39m
+[36m    void helloReturnsNonNullValue() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result, "hello() method should not return null");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns non-empty string")[39m
+[36m    void helloReturnsNonEmptyString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isEmpty(), "hello() method should return non-empty string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns exact string with correct length")[39m
+[36m    void helloReturnsCorrectLength() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m        int expectedLength = 20;[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedLength, result.length(), [39m
+[36m            "hello() method should return string of length 20");[39m
+[36m        assertEquals(expectedOutput.length(), result.length(), [39m
+[36m            "Returned string length should match expected output length");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns consistent results on multiple calls")[39m
+[36m    void helloReturnsConsistentResults() {[39m
+[36m        // Act[39m
+[36m        String firstCall = helloController.hello();[39m
+[36m        String secondCall = helloController.hello();[39m
+[36m        String thirdCall = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(firstCall, secondCall, [39m
+[36m            "Multiple calls to hello() should return same value");[39m
+[36m        assertEquals(secondCall, thirdCall, [39m
+[36m            "Multiple calls to hello() should return same value");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string with correct content")[39m
+[36m    void helloReturnsCorrectContent() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.contains("Hello"), [39m
+[36m            "Returned string should contain 'Hello'");[39m
+[36m        assertTrue(result.contains("Spring Boot"), [39m
+[36m            "Returned string should contain 'Spring Boot'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string starting with 'Hello'")[39m
+[36m    void helloReturnsStringStartingWithHello() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.startsWith("Hello"), [39m
+[36m            "Returned string should start with 'Hello'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string ending with exclamation mark")[39m
+[36m    void helloReturnsStringEndingWithExclamation() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.endsWith("!"), [39m
+[36m            "Returned string should end with '!'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method does not return null or empty after trimming")[39m
+[36m    void helloReturnsValidTrimmedString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result.trim(), "Trimmed result should not be null");[39m
+[36m        assertFalse(result.trim().isEmpty(), "Trimmed result should not be empty");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns exact case-sensitive string")[39m
+[36m    void helloReturnsCaseSensitiveString() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedOutput, result, [39m
+[36m            "hello() method should return exact case-sensitive string");[39m
+[36m        assertNotEquals("hello, spring boot!", result, [39m
+[36m            "Returned string should be case-sensitive");[39m
+[36m    }[39m
+[36m}[39m
+[36m```[39m
+[14/11/2025, 5:26:27 PM] - [INTERNAL] - [36mClaude AI parsed response:[39m
+[36mpackage com.example.demo;[39m
+[36m[39m
+[36mimport org.junit.jupiter.api.BeforeEach;[39m
+[36mimport org.junit.jupiter.api.DisplayName;[39m
+[36mimport org.junit.jupiter.api.Tag;[39m
+[36mimport org.junit.jupiter.api.Test;[39m
+[36m[39m
+[36mimport static org.junit.jupiter.api.Assertions.*;[39m
+[36m[39m
+[36m@DisplayName("HelloController - hello() Method Tests")[39m
+[36mclass HelloControllerHelloTest {[39m
+[36m[39m
+[36m    private HelloController helloController;[39m
+[36m[39m
+[36m    @BeforeEach[39m
+[36m    void setUp() {[39m
+[36m        helloController = new HelloController();[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns expected string")[39m
+[36m    void helloReturnsExpectedString() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String actualOutput = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedOutput, actualOutput, [39m
+[36m            "hello() method should return 'Hello, Spring Boot!'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns non-null value")[39m
+[36m    void helloReturnsNonNullValue() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result, "hello() method should not return null");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns non-empty string")[39m
+[36m    void helloReturnsNonEmptyString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isEmpty(), "hello() method should return non-empty string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns exact string with correct length")[39m
+[36m    void helloReturnsCorrectLength() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m        int expectedLength = 20;[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedLength, result.length(), [39m
+[36m            "hello() method should return string of length 20");[39m
+[36m        assertEquals(expectedOutput.length(), result.length(), [39m
+[36m            "Returned string length should match expected output length");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns consistent results on multiple calls")[39m
+[36m    void helloReturnsConsistentResults() {[39m
+[36m        // Act[39m
+[36m        String firstCall = helloController.hello();[39m
+[36m        String secondCall = helloController.hello();[39m
+[36m        String thirdCall = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(firstCall, secondCall, [39m
+[36m            "Multiple calls to hello() should return same value");[39m
+[36m        assertEquals(secondCall, thirdCall, [39m
+[36m            "Multiple calls to hello() should return same value");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string with correct content")[39m
+[36m    void helloReturnsCorrectContent() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.contains("Hello"), [39m
+[36m            "Returned string should contain 'Hello'");[39m
+[36m        assertTrue(result.contains("Spring Boot"), [39m
+[36m            "Returned string should contain 'Spring Boot'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string starting with 'Hello'")[39m
+[36m    void helloReturnsStringStartingWithHello() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.startsWith("Hello"), [39m
+[36m            "Returned string should start with 'Hello'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns string ending with exclamation mark")[39m
+[36m    void helloReturnsStringEndingWithExclamation() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.endsWith("!"), [39m
+[36m            "Returned string should end with '!'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method does not return null or empty after trimming")[39m
+[36m    void helloReturnsValidTrimmedString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result.trim(), "Trimmed result should not be null");[39m
+[36m        assertFalse(result.trim().isEmpty(), "Trimmed result should not be empty");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("Verify hello() method returns exact case-sensitive string")[39m
+[36m    void helloReturnsCaseSensitiveString() {[39m
+[36m        // Arrange[39m
+[36m        String expectedOutput = "Hello, Spring Boot!";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.hello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedOutput, result, [39m
+[36m            "hello() method should return exact case-sensitive string");[39m
+[36m        assertNotEquals("hello, spring boot!", result, [39m
+[36m            "Returned string should be case-sensitive");[39m
+[36m    }[39m
+[36m}[39m
+[36m[39m
+[14/11/2025, 5:26:27 PM] - [INTERNAL] - [36m[39m
+[36mPost Cache Call[39m
+[36mSystemContentHash: ba475c3213[39m
+[36mUserContentHash: afe21036f6[39m
+[14/11/2025, 5:26:27 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: ba475c3213,[39m
+[36m      system_prompt_content: systemContent,[39m
+[36m      user_prompt_hash: afe21036f6,[39m
+[36m      user_prompt_content: userContent,[39m
+[36m      response: aiResponse,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:27 PM] - [INTERNAL] - [36mSuccessfully added AI response to the cache server for the given system and user prompts[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mSuccessfully written test for method hello into src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java"}[39m
+[14/11/2025, 5:26:28 PM] - [ERROR] - [31mError executing command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java"} with error: Error: spawn ENOTDIR[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mCompiling  the test...[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mExecuting the command: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mCommand: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[32mExited with exitCode: 0[39m
+[32mstdout: [INFO] Scanning for projects...[39m
+[32m[INFO] [39m
+[32m[INFO] -----------------< com.example:simple-spring-boot-app >-----------------[39m
+[32m[INFO] Building Simple Spring Boot Application 1.0.0[39m
+[32m[INFO]   from pom.xml[39m
+[32m[INFO] --------------------------------[ jar ]---------------------------------[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:resources (default-resources) @ simple-spring-boot-app ---[39m
+[32m[INFO] Copying 1 resource from src/main/resources to target/classes[39m
+[32m[INFO] Copying 0 resource from src/main/resources to target/classes[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:compile (default-compile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Nothing to compile - all classes are up to date[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:testResources (default-testResources) @ simple-spring-boot-app ---[39m
+[32m[INFO] skip non existing resourceDirectory /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/resources[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Changes detected - recompiling the module! :input tree[39m
+[32m[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] BUILD SUCCESS[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] Total time:  1.879 s[39m
+[32m[INFO] Finished at: 2025-11-14T17:26:31+05:30[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32mstderr: [39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mSuccessfully generated and compiled test src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mSuccessfully added tags in /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mcheckpoint-9.1 token limit apiHello[39m
+[14/11/2025, 5:26:32 PM] - [SIMPLE] - [97m~~~~~~~~~~ Generating test for the method: apiHello from the file src/main/java/com/example/demo/HelloController.java ~~~~~~~~~~[39m
+[14/11/2025, 5:26:32 PM] - [INTERNAL] - [36m[39m
+[36mSystem content:[39m
+[36mYou are an experienced java programmer.[39m
+[36mUser content:[39m
+[36m[39m
+[36mDESCRIPTION:[39m
+[36m  - Write JUnit test scenarios for the below-provided method [39m
+[36m[39m
+[36mwith its class name as HelloController. Do not write test code to validate.[39m
+[36m  - Generate all test scenarios completely in english language, including all section headers and labels.[39m
+[36m  - Follow the natural text direction and formatting conventions of english (e.g., right-to-left for Hebrew/Arabic, left-to-right for English/Spanish, etc.).[39m
+[36m  """[39m
+[36m  public String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m} [39m
+[36m  """[39m
+[36m[39m
+[36mINSTRUCTIONS:  [39m
+[36m- Use these details to implement better scenarios[39m
+[36m  - The following is a list of imports[39m
+[36mimport org.springframework.web.bind.annotation.GetMapping;[39m
+[36mimport org.springframework.web.bind.annotation.RestController;[39m
+[36m[39m
+[36m   [39m
+[36m  The methods defined in the HelloController class are:[39m
+[36m[39m
+[36mpublic String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m}[39m
+[36m[39m
+[36mpublic String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m}[39m
+[36m   [39m
+[36m  [39m
+[36mTASK:[39m
+[36m  - Generate Test Scenarios completely in english language using the format specified below:[39m
+[36m - Translate ALL section headers, labels, and terms (including Scenario, Details, TestName, Description, Execution, Arrange, Act, Assert, Validation) into english:[39m
+[36m - IMPORTANT: Format the output according to english writing conventions:[39m
+[36m   * For RTL languages (Hebrew, Arabic, Urdu, etc.): Use right-to-left text direction and appropriate formatting[39m
+[36m   * For LTR languages (English, Spanish, French, etc.): Use left-to-right text direction[39m
+[36m   * For languages with specific formatting rules (Chinese, Japanese, etc.): Follow their traditional formatting conventions[39m
+[36m [39m
+[36m [39m
+[36m  """ [39m
+[36m  Scenario [Number]: [Brief Description of the Test][39m
+[36m[39m
+[36m  Details:  [39m
+[36m    TestName: testScenarioInCamelCase(ensure to keep the camelCase format without the Test prefix).[39m
+[36m    Description: An explanation of what the test is meant to check, including the specific functionality and the target scenario. [39m
+[36m  Execution:[39m
+[36m    Arrange: Set up any required data, mocks, or test doubles. [39m
+[36m    Act: Invoke the target method with the appropriate parameters or conditions. [39m
+[36m    Assert: Use JUnit assertions to compare actual results against expected outcomes.[39m
+[36m  Validation: [39m
+[36m    Clarify what the assertion aims to verify and the reason behind the expected result. [39m
+[36m    Elaborate on the significance of the test in the context of application behavior or business logic.[39m
+[36m  """ [39m
+[36mReplace testScenarioInCamelCase with an actual test method name, ensure to keep the camelCase format without the Test prefix. [39m
+[36mReplace [Number] with the scenario number and [Brief Description of the Test] with the specifics of what the test is about.[39m
+[36m[39m
+[36m[39m
+[36m - Generate as many test scenarios as possible for the given method, ensuring to cover edge cases and error handling.[39m
+[36m - apiHello is the method you need to create test scenarios for.[39m
+[36m[39m
+[36m  Ensure that generated test scenarios accurately reflect the given method parameters and return types.[39m
+[36m [39m
+[36m [39m
+[36m NOTE: [39m
+[36m  1. While generating test scenarios for the mentioned method, use only existing public methods, public fields, import statements that are provided above. Do not assume the existence of any getter or setter methods that are not explicitly provided. If a method is not present in the entity, do not reference it in the test scenario.[39m
+[36m  2. Write scenarios quoted inside triple backticks.[39m
+[36m  3. IMPORTANT: Translate ALL section headers, labels, and structural terms into english. Only keep actual Java method names and technical code elements in their original form.[39m
+[36m  4. The entire output should be in english including all descriptive text and section labels.[39m
+[36m  5. CRITICAL: Follow the natural reading direction of english:[39m
+[36m  - For Hebrew/Arabic/Persian/Urdu: Format text from right-to-left[39m
+[36m  - For Chinese/Japanese: Consider vertical or horizontal formatting as appropriate[39m
+[36m  - For English/European languages: Use standard left-to-right formatting[39m
+[36m  - Maintain proper punctuation and spacing conventions for the chosen language[39m
+[36m  6. When formatting RTL languages, ensure proper alignment and text flow while keeping code elements (like method names) in their standard format.[39m
+[36m[39m
+[36mGeneration type: code[39m
+[36mAi Model: claude-haiku-4-5-20251001[39m
+[36mAi Temperature: 0.3[39m
+[36m[39m
+[14/11/2025, 5:26:32 PM] - [INTERNAL] - [36m[39m
+[36mGet Cache call[39m
+[36mSystemContentHash: fd79282333[39m
+[36mUserContentHash: 7f2fcde96c[39m
+[14/11/2025, 5:26:32 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: fd79282333,[39m
+[36m      user_prompt_hash: 7f2fcde96c,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:32 PM] - [INTERNAL] - [36mCould not load response from cache server: AxiosError: Request failed with status code 404[39m
+[14/11/2025, 5:26:42 PM] - [INTERNAL] - [36mClaude AI parsed response:[39m
+[36mScenario 1: Verify apiHello Returns Expected Welcome Message[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsWelcomeMessage[39m
+[36m  Description: This test verifies that the apiHello() method returns the exact expected string "Welcome to Spring Boot REST API". The test ensures that the method produces the correct welcome message for REST API clients accessing the endpoint.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Welcome to Spring Boot REST API".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the apiHello() method returns the correct welcome message. The test is significant because it ensures that REST API clients receive the intended greeting message, which is fundamental to the API's user experience and communication protocol.[39m
+[36m[39m
+[14/11/2025, 5:26:42 PM] - [INTERNAL] - [36mClaude AI response:[39m
+[36m```[39m
+[36mScenario 1: Verify apiHello Returns Expected Welcome Message[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsWelcomeMessage[39m
+[36m  Description: This test verifies that the apiHello() method returns the exact expected string "Welcome to Spring Boot REST API". The test ensures that the method produces the correct welcome message for REST API clients accessing the endpoint.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Welcome to Spring Boot REST API".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the apiHello() method returns the correct welcome message. The test is significant because it ensures that REST API clients receive the intended greeting message, which is fundamental to the API's user experience and communication protocol.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 2: Verify apiHello Returns Non-Null Value[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsNonNullValue[39m
+[36m  Description: This test validates that the apiHello() method never returns a null value. The test ensures that the method always provides a valid string response, preventing potential NullPointerException errors in client code.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned value.[39m
+[36m  Assert: Use assertNotNull() to verify that the returned value is not null.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures that the apiHello() method guarantees a non-null response. This test is important for application stability because it prevents null reference exceptions and ensures that the API always provides a valid response to clients.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 3: Verify apiHello Returns Non-Empty String[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsNonEmptyString[39m
+[36m  Description: This test verifies that the apiHello() method returns a non-empty string. The test ensures that the method does not return an empty string, which would indicate an incomplete or invalid response.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned string value.[39m
+[36m  Assert: Use assertTrue() with the condition that the returned string length is greater than zero.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the apiHello() method returns a meaningful response with content. The test is significant because it ensures that the API provides substantive information to clients rather than empty or meaningless responses.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 4: Verify apiHello Returns String Type[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsStringType[39m
+[36m  Description: This test validates that the apiHello() method returns an object of type String. The test ensures that the return type is correct and matches the method signature.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned value.[39m
+[36m  Assert: Use assertTrue() with instanceof operator to verify that the returned value is an instance of String class.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures that the apiHello() method returns the correct data type as specified in its signature. This test is important for type safety and ensures that client code can properly handle the response without type casting issues.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 5: Verify apiHello Method Consistency Across Multiple Invocations[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloConsistencyAcrossMultipleInvocations[39m
+[36m  Description: This test verifies that the apiHello() method returns the same value consistently when called multiple times. The test ensures that the method produces deterministic results without variation.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method three times and capture each returned value.[39m
+[36m  Assert: Use assertEquals() to verify that all three returned values are identical to each other and to the expected string.[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the apiHello() method produces consistent and deterministic results. This test is significant because it ensures that the API provides reliable and predictable responses, which is essential for client applications that depend on consistent behavior.[39m
+[36m```[39m
+[36m[39m
+[36m```[39m
+[36mScenario 6: Verify apiHello Message Contains Expected Keywords[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloMessageContainsExpectedKeywords[39m
+[36m  Description: This test validates that the apiHello() method returns a message containing specific keywords such as "Welcome", "Spring Boot", and "REST API". The test ensures that the response includes all important contextual information.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned string value.[39m
+[36m  Assert: Use assertTrue() with contains() method to verify that the returned string includes "Welcome", "Spring Boot", and "REST API".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion ensures that the apiHello() method returns a message with all expected keywords. This test is important for verifying that the API response provides complete and meaningful information to clients about the service nature and purpose.[39m
+[36m```[39m
+[14/11/2025, 5:26:42 PM] - [INTERNAL] - [36m[39m
+[36mPost Cache Call[39m
+[36mSystemContentHash: fd79282333[39m
+[36mUserContentHash: 7f2fcde96c[39m
+[14/11/2025, 5:26:42 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: fd79282333,[39m
+[36m      system_prompt_content: systemContent,[39m
+[36m      user_prompt_hash: 7f2fcde96c,[39m
+[36m      user_prompt_content: userContent,[39m
+[36m      response: aiResponse,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:43 PM] - [INTERNAL] - [36mSuccessfully added AI response to the cache server for the given system and user prompts[39m
+[14/11/2025, 5:26:43 PM] - [INTERNAL] - [36m[39m
+[36mSystem content:[39m
+[36m[39m
+[36m[39m
+[36mYou are an AI assistant that generates comprehensive JUnit5 test cases for Java methods based on the provided method signature and test scenarios. Adhere to the following guidelines:[39m
+[36m[39m
+[36m- Generate test cases strictly in code blocks without explanations.[39m
+[36m  - Create test cases that thoroughly test various aspects of the method, including success and failure cases, edge cases, and error handling.[39m
+[36m  [39m
+[36m  - Include assertions in each test case to verify the expected output matches the actual output.[39m
+[36m  - Mock external services and focus on testing the logic and execution of code for different scenarios.[39m
+[36m  - Use annotations to prepare the system for tests.[39m
+[36m  - Write tests considering real-world scenarios.[39m
+[36m  - Ensure the generated code is Java compilable and follows good coding practices.[39m
+[36m  - When encountering live values, check if they are not null and are valid within a valid range.[39m
+[36m  - Use appropriate import statements based on the provided dependencies and class information.[39m
+[36m  - Use the provided class name, method signatures, fields, and constructor details to generate the test cases.[39m
+[36m  - Maintain the casing of the existing function names and objects.[39m
+[36m  - Use package declaration as "com.example.demo"[39m
+[36m  - Generated class name should be exactly "HelloControllerApiHelloTest"[39m
+[36m  - Add imports for the current class and embedded structs or enums if they are referred to in the tests.[39m
+[36m  - Use only the annotations that are relevant to the testing framework being used, avoid any unnecessary annotations in the generated test class.[39m
+[36m  - Do not include the @Generated annotation or any similar annotations that indicate the code is generated by a tool.[39m
+[36m  - If a test is requiring a user input, use dummy values instead of actually taking input from the user[39m
+[36m[39m
+[36m[39m
+[36mUser content:[39m
+[36m[39m
+[36m    [39m
+[36m  [39m
+[36m  - use appropriate import statements:[39m
+[36mimport org.springframework.web.bind.annotation.GetMapping;[39m
+[36mimport org.springframework.web.bind.annotation.RestController;[39m
+[36m  [39m
+[36m  [39m
+[36m  The methods defined in the HelloController class are:[39m
+[36m[39m
+[36mpublic String hello() {[39m
+[36m    return "Hello, Spring Boot!";[39m
+[36m}[39m
+[36m[39m
+[36mpublic String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m}[39m
+[36m  [39m
+[36m  [39m
+[36m  [39m
+[36m  - [39m
+[36m  [39m
+[36m  - Take the following dependencies in account while generating the tests for given repo in the format {name: , code: , nested dependency: }.[39m
+[36m  - Dependencies: [ 'org.springframework.boot' ][39m
+[36m  - Consider the provided test case scenarios in a table-driven test approach[39m
+[36m  [39m
+[36m  - Consider below test case scenarios in a table driven test:[39m
+[36m  - TEST SCENARIOS:[39m
+[36m	Scenario 1: Verify apiHello Returns Expected Welcome Message[39m
+[36m[39m
+[36mDetails:[39m
+[36m  TestName: apiHelloReturnsWelcomeMessage[39m
+[36m  Description: This test verifies that the apiHello() method returns the exact expected string "Welcome to Spring Boot REST API". The test ensures that the method produces the correct welcome message for REST API clients accessing the endpoint.[39m
+[36m[39m
+[36mExecution:[39m
+[36m  Arrange: Create an instance of HelloController class to access the apiHello() method.[39m
+[36m  Act: Invoke the apiHello() method and capture the returned string value.[39m
+[36m  Assert: Use assertEquals() to verify that the returned value matches the expected string "Welcome to Spring Boot REST API".[39m
+[36m[39m
+[36mValidation:[39m
+[36m  This assertion confirms that the apiHello() method returns the correct welcome message. The test is significant because it ensures that REST API clients receive the intended greeting message, which is fundamental to the API's user experience and communication protocol.[39m
+[36m[39m
+[36m[39m
+[36m  - Add tags to tests based on their specific scenarios. The tags can only be categorised as valid, invalid, boundary or integration. Ensure tags are correctly formatted as @Tag("exampleTag")[39m
+[36m  - Generate comprehensive test cases for the following Java method:[39m
+[36m[39m
+[36mpublic String apiHello() {[39m
+[36m    return "Welcome to Spring Boot REST API";[39m
+[36m} [39m
+[36m[39m
+[36mwith its class name as HelloController.[39m
+[36m  [39m
+[36m   [39m
+[36mGeneration type: code[39m
+[36mAi Model: claude-haiku-4-5-20251001[39m
+[36mAi Temperature: 0.3[39m
+[36m[39m
+[14/11/2025, 5:26:43 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: b958ba72e5,[39m
+[36m      user_prompt_hash: 189c483aa8,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:43 PM] - [INTERNAL] - [36m[39m
+[36mGet Cache call[39m
+[36mSystemContentHash: b958ba72e5[39m
+[36mUserContentHash: 189c483aa8[39m
+[14/11/2025, 5:26:43 PM] - [INTERNAL] - [36mCould not load response from cache server: AxiosError: Request failed with status code 404[39m
+[14/11/2025, 5:26:52 PM] - [INTERNAL] - [36mClaude AI response:[39m
+[36m```java[39m
+[36mpackage com.example.demo;[39m
+[36m[39m
+[36mimport org.junit.jupiter.api.BeforeEach;[39m
+[36mimport org.junit.jupiter.api.DisplayName;[39m
+[36mimport org.junit.jupiter.api.Tag;[39m
+[36mimport org.junit.jupiter.api.Test;[39m
+[36mimport org.junit.jupiter.params.ParameterizedTest;[39m
+[36mimport org.junit.jupiter.params.provider.ValueSource;[39m
+[36m[39m
+[36mimport static org.junit.jupiter.api.Assertions.*;[39m
+[36m[39m
+[36m@DisplayName("HelloController API Hello Tests")[39m
+[36mclass HelloControllerApiHelloTest {[39m
+[36m[39m
+[36m    private HelloController helloController;[39m
+[36m[39m
+[36m    @BeforeEach[39m
+[36m    void setUp() {[39m
+[36m        helloController = new HelloController();[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Expected Welcome Message")[39m
+[36m    void apiHelloReturnsWelcomeMessage() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String actualMessage = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, actualMessage, "apiHello() should return the exact welcome message");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Non-Null Value")[39m
+[36m    void apiHelloReturnsNonNullValue() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result, "apiHello() should not return null");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Non-Empty String")[39m
+[36m    void apiHelloReturnsNonEmptyString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isEmpty(), "apiHello() should return a non-empty string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns String With Expected Length")[39m
+[36m    void apiHelloReturnsStringWithExpectedLength() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m        int expectedLength = expectedMessage.length();[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedLength, result.length(), "apiHello() should return a string with the expected length");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Consistent Results")[39m
+[36m    void apiHelloReturnsConsistentResults() {[39m
+[36m        // Act[39m
+[36m        String firstCall = helloController.apiHello();[39m
+[36m        String secondCall = helloController.apiHello();[39m
+[36m        String thirdCall = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(firstCall, secondCall, "Multiple calls should return the same message");[39m
+[36m        assertEquals(secondCall, thirdCall, "Multiple calls should return the same message");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Containing Expected Keywords")[39m
+[36m    void apiHelloReturnsMessageContainingExpectedKeywords() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.contains("Welcome"), "Message should contain 'Welcome'");[39m
+[36m        assertTrue(result.contains("Spring Boot"), "Message should contain 'Spring Boot'");[39m
+[36m        assertTrue(result.contains("REST API"), "Message should contain 'REST API'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message With Correct Case")[39m
+[36m    void apiHelloReturnsMessageWithCorrectCase() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, result, "apiHello() should return message with correct case sensitivity");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Starting With Welcome")[39m
+[36m    void apiHelloReturnsMessageStartingWithWelcome() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.startsWith("Welcome"), "Message should start with 'Welcome'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Ending With API")[39m
+[36m    void apiHelloReturnsMessageEndingWithApi() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.endsWith("API"), "Message should end with 'API'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Does Not Return Blank String")[39m
+[36m    void apiHelloDoesNotReturnBlankString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isBlank(), "apiHello() should not return a blank string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("boundary")[39m
+[36m    @DisplayName("apiHello Returns String With Exact Expected Content")[39m
+[36m    void apiHelloReturnsStringWithExactExpectedContent() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, result);[39m
+[36m        assertNotEquals("Welcome to Spring Boot REST API ", result, "Should not have trailing spaces");[39m
+[36m        assertNotEquals(" Welcome to Spring Boot REST API", result, "Should not have leading spaces");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns String Type")[39m
+[36m    void apiHelloReturnsStringType() {[39m
+[36m        // Act[39m
+[36m        Object result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertInstanceOf(String.class, result, "apiHello() should return a String instance");[39m
+[36m    }[39m
+[36m}[39m
+[36m```[39m
+[14/11/2025, 5:26:52 PM] - [INTERNAL] - [36mClaude AI parsed response:[39m
+[36mpackage com.example.demo;[39m
+[36m[39m
+[36mimport org.junit.jupiter.api.BeforeEach;[39m
+[36mimport org.junit.jupiter.api.DisplayName;[39m
+[36mimport org.junit.jupiter.api.Tag;[39m
+[36mimport org.junit.jupiter.api.Test;[39m
+[36mimport org.junit.jupiter.params.ParameterizedTest;[39m
+[36mimport org.junit.jupiter.params.provider.ValueSource;[39m
+[36m[39m
+[36mimport static org.junit.jupiter.api.Assertions.*;[39m
+[36m[39m
+[36m@DisplayName("HelloController API Hello Tests")[39m
+[36mclass HelloControllerApiHelloTest {[39m
+[36m[39m
+[36m    private HelloController helloController;[39m
+[36m[39m
+[36m    @BeforeEach[39m
+[36m    void setUp() {[39m
+[36m        helloController = new HelloController();[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Expected Welcome Message")[39m
+[36m    void apiHelloReturnsWelcomeMessage() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String actualMessage = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, actualMessage, "apiHello() should return the exact welcome message");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Non-Null Value")[39m
+[36m    void apiHelloReturnsNonNullValue() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertNotNull(result, "apiHello() should not return null");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Non-Empty String")[39m
+[36m    void apiHelloReturnsNonEmptyString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isEmpty(), "apiHello() should return a non-empty string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns String With Expected Length")[39m
+[36m    void apiHelloReturnsStringWithExpectedLength() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m        int expectedLength = expectedMessage.length();[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedLength, result.length(), "apiHello() should return a string with the expected length");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Consistent Results")[39m
+[36m    void apiHelloReturnsConsistentResults() {[39m
+[36m        // Act[39m
+[36m        String firstCall = helloController.apiHello();[39m
+[36m        String secondCall = helloController.apiHello();[39m
+[36m        String thirdCall = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(firstCall, secondCall, "Multiple calls should return the same message");[39m
+[36m        assertEquals(secondCall, thirdCall, "Multiple calls should return the same message");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Containing Expected Keywords")[39m
+[36m    void apiHelloReturnsMessageContainingExpectedKeywords() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.contains("Welcome"), "Message should contain 'Welcome'");[39m
+[36m        assertTrue(result.contains("Spring Boot"), "Message should contain 'Spring Boot'");[39m
+[36m        assertTrue(result.contains("REST API"), "Message should contain 'REST API'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message With Correct Case")[39m
+[36m    void apiHelloReturnsMessageWithCorrectCase() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, result, "apiHello() should return message with correct case sensitivity");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Starting With Welcome")[39m
+[36m    void apiHelloReturnsMessageStartingWithWelcome() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.startsWith("Welcome"), "Message should start with 'Welcome'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns Message Ending With API")[39m
+[36m    void apiHelloReturnsMessageEndingWithApi() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertTrue(result.endsWith("API"), "Message should end with 'API'");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Does Not Return Blank String")[39m
+[36m    void apiHelloDoesNotReturnBlankString() {[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertFalse(result.isBlank(), "apiHello() should not return a blank string");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("boundary")[39m
+[36m    @DisplayName("apiHello Returns String With Exact Expected Content")[39m
+[36m    void apiHelloReturnsStringWithExactExpectedContent() {[39m
+[36m        // Arrange[39m
+[36m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[36m[39m
+[36m        // Act[39m
+[36m        String result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertEquals(expectedMessage, result);[39m
+[36m        assertNotEquals("Welcome to Spring Boot REST API ", result, "Should not have trailing spaces");[39m
+[36m        assertNotEquals(" Welcome to Spring Boot REST API", result, "Should not have leading spaces");[39m
+[36m    }[39m
+[36m[39m
+[36m    @Test[39m
+[36m    @Tag("valid")[39m
+[36m    @DisplayName("apiHello Returns String Type")[39m
+[36m    void apiHelloReturnsStringType() {[39m
+[36m        // Act[39m
+[36m        Object result = helloController.apiHello();[39m
+[36m[39m
+[36m        // Assert[39m
+[36m        assertInstanceOf(String.class, result, "apiHello() should return a String instance");[39m
+[36m    }[39m
+[36m}[39m
+[36m[39m
+[14/11/2025, 5:26:52 PM] - [INTERNAL] - [36m[39m
+[36mPost Cache Call[39m
+[36mSystemContentHash: b958ba72e5[39m
+[36mUserContentHash: 189c483aa8[39m
+[14/11/2025, 5:26:52 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: b958ba72e5,[39m
+[36m      system_prompt_content: systemContent,[39m
+[36m      user_prompt_hash: 189c483aa8,[39m
+[36m      user_prompt_content: userContent,[39m
+[36m      response: aiResponse,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:52 PM] - [INTERNAL] - [36mSuccessfully added AI response to the cache server for the given system and user prompts[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mSuccessfully written test for method apiHello into src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java"}[39m
+[14/11/2025, 5:26:52 PM] - [ERROR] - [31mError executing command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java"} with error: Error: spawn ENOTDIR[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mCompiling  the test...[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mExecuting the command: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mCommand: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[32mExited with exitCode: 0[39m
+[32mstdout: [INFO] Scanning for projects...[39m
+[32m[INFO] [39m
+[32m[INFO] -----------------< com.example:simple-spring-boot-app >-----------------[39m
+[32m[INFO] Building Simple Spring Boot Application 1.0.0[39m
+[32m[INFO]   from pom.xml[39m
+[32m[INFO] --------------------------------[ jar ]---------------------------------[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:resources (default-resources) @ simple-spring-boot-app ---[39m
+[32m[INFO] Copying 1 resource from src/main/resources to target/classes[39m
+[32m[INFO] Copying 0 resource from src/main/resources to target/classes[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:compile (default-compile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Nothing to compile - all classes are up to date[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:testResources (default-testResources) @ simple-spring-boot-app ---[39m
+[32m[INFO] skip non existing resourceDirectory /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/resources[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Changes detected - recompiling the module! :input tree[39m
+[32m[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] BUILD SUCCESS[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] Total time:  1.321 s[39m
+[32m[INFO] Finished at: 2025-11-14T17:26:55+05:30[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32mstderr: [39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mSuccessfully generated and compiled test src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mSuccessfully added tags in /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INTERNAL] - [36m[39m
+[36mSystem content:[39m
+[36mWrite code without any explanation, and write code in code block[39m
+[36mUser content:[39m
+[36m[39m
+[36mEnhanced Maven pom.xml Dependency Analysis Prompt[39m
+[36mObjective: [39m
+[36m- Identify and list all missing third-party dependencies not included in the pom.xml, which are referenced by the test file imports and are necessary for successful compilation.  [39m
+[36m- Also add additional dependencies of these missing third-party dependencies as well, that is their other artifactIDs also.[39m
+[36m[39m
+[36mContextual Information:[39m
+[36m--- Start of pom.xml Snapshot ---   [39m
+[36m<?xml version="1.0" encoding="UTF-8"?>[39m
+[36m<project xmlns="http://maven.apache.org/POM/4.0.0"[39m
+[36m         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[39m
+[36m         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 [39m
+[36m         http://maven.apache.org/xsd/maven-4.0.0.xsd">[39m
+[36m    <modelVersion>4.0.0</modelVersion>[39m
+[36m[39m
+[36m    <parent>[39m
+[36m        <groupId>org.springframework.boot</groupId>[39m
+[36m        <artifactId>spring-boot-starter-parent</artifactId>[39m
+[36m        <version>3.2.0</version>[39m
+[36m        <relativePath/>[39m
+[36m    </parent>[39m
+[36m[39m
+[36m    <groupId>com.example</groupId>[39m
+[36m    <artifactId>simple-spring-boot-app</artifactId>[39m
+[36m    <version>1.0.0</version>[39m
+[36m    <name>Simple Spring Boot Application</name>[39m
+[36m    <description>Simple Spring Boot Maven Project</description>[39m
+[36m[39m
+[36m    <properties>[39m
+[36m        <java.version>17</java.version>[39m
+[36m        <maven.compiler.source>17</maven.compiler.source>[39m
+[36m        <maven.compiler.target>17</maven.compiler.target>[39m
+[36m        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>[39m
+[36m    </properties>[39m
+[36m[39m
+[36m    <dependencies>[39m
+[36m        <!-- Spring Boot Web Starter -->[39m
+[36m        <dependency>[39m
+[36m            <groupId>org.springframework.boot</groupId>[39m
+[36m            <artifactId>spring-boot-starter-web</artifactId>[39m
+[36m        </dependency>[39m
+[36m[39m
+[36m        <!-- Spring Boot Test Starter -->[39m
+[36m        <dependency>[39m
+[36m            <groupId>org.springframework.boot</groupId>[39m
+[36m            <artifactId>spring-boot-starter-test</artifactId>[39m
+[36m            <scope>test</scope>[39m
+[36m        </dependency>[39m
+[36m    </dependencies>[39m
+[36m[39m
+[36m    <build>[39m
+[36m        <plugins>[39m
+[36m            <plugin>[39m
+[36m                <groupId>org.springframework.boot</groupId>[39m
+[36m                <artifactId>spring-boot-maven-plugin</artifactId>[39m
+[36m            </plugin>[39m
+[36m        </plugins>[39m
+[36m    </build>[39m
+[36m</project>[39m
+[36m  [39m
+[36m--- End of pom.xml Snapshot ---  [39m
+[36m  [39m
+[36mImported Dependencies from Test File --- import org.junit.jupiter.params.ParameterizedTest;,import org.junit.jupiter.params.provider.ValueSource;  [39m
+[36m  [39m
+[36mCompilation Errors (If Any) --- [39m
+[36m[39m
+[36mImportant Directive for Output:[39m
+[36m- The required outcome is strictly the JSON array of objects detailing the missing dependencies and also their additional submodules/artifactIDs as well.   [39m
+[36m- Explicitly avoid generating or including any programmatic code, executable scripts, Maven XML snippets, or code fragments intended to produce the array.  [39m
+[36m- The task is to provide the data for the missing dependencies, not the code that could be used to retrieve or construct this data.[39m
+[36m[39m
+[36mDesired Output Format:[39m
+[36m- Construct a JSON-formatted array consisting solely of objects, with each object representing a missing dependency.  [39m
+[36m- Also add  Each object within this array should encompass the following attributes:  [39m
+[36m  [39m
+[36m'groupId' (String): The group ID linked to the missing dependency.  [39m
+[36m'artifactId' (String): The artifact ID of the missing dependency.  [39m
+[36m'version' (String): The version number that ensures compatibility and functionality within the project.  [39m
+[36m'scope' (String): The scope defining where the dependency is required within the project lifecycle. Set the scope to "compile".[39m
+[36m[39m
+[36mSample Output Format:[39m
+[36m- Dont assign the output array to a variable.  [39m
+[36m- Return only the JSON code in code blocks. Sample data is given below.  [39m
+[36m  [39m
+[36m```json  [39m
+[36m[  [39m
+[36m  {  [39m
+[36m    "groupId": "groupId",  [39m
+[36m    "artifactId": "artifactId",  [39m
+[36m    "version": "version",  [39m
+[36m    "scope": "compile"  [39m
+[36m  },  [39m
+[36m  {  [39m
+[36m    "groupId": "groupId",  [39m
+[36m    "artifactId": "artifactId",  [39m
+[36m    "version": "version",  [39m
+[36m    "scope": "compile"  [39m
+[36m  }  [39m
+[36m]  [39m
+[36m```[39m
+[36m[39m
+[36mGeneration type: code[39m
+[36mAi Model: claude-haiku-4-5-20251001[39m
+[36mAi Temperature: 0.3[39m
+[36m[39m
+[14/11/2025, 5:26:55 PM] - [INTERNAL] - [36m[39m
+[36mGet Cache call[39m
+[36mSystemContentHash: 7b4fddf3a8[39m
+[36mUserContentHash: ca7195ac0f[39m
+[14/11/2025, 5:26:55 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: 7b4fddf3a8,[39m
+[36m      user_prompt_hash: ca7195ac0f,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:55 PM] - [INTERNAL] - [36mCould not load response from cache server: AxiosError: Request failed with status code 404[39m
+[14/11/2025, 5:26:59 PM] - [INTERNAL] - [36mClaude AI response:[39m
+[36m```json[39m
+[36m[[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-params",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-api",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-engine",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.platform",[39m
+[36m    "artifactId": "junit-platform-suite",[39m
+[36m    "version": "1.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.platform",[39m
+[36m    "artifactId": "junit-platform-commons",[39m
+[36m    "version": "1.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  }[39m
+[36m][39m
+[36m```[39m
+[14/11/2025, 5:26:59 PM] - [INTERNAL] - [36mClaude AI parsed response:[39m
+[36m[[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-params",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-api",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.jupiter",[39m
+[36m    "artifactId": "junit-jupiter-engine",[39m
+[36m    "version": "5.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.platform",[39m
+[36m    "artifactId": "junit-platform-suite",[39m
+[36m    "version": "1.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  },[39m
+[36m  {[39m
+[36m    "groupId": "org.junit.platform",[39m
+[36m    "artifactId": "junit-platform-commons",[39m
+[36m    "version": "1.9.3",[39m
+[36m    "scope": "test"[39m
+[36m  }[39m
+[36m][39m
+[36m[39m
+[14/11/2025, 5:26:59 PM] - [INTERNAL] - [36m[39m
+[36mPost Cache Call[39m
+[36mSystemContentHash: 7b4fddf3a8[39m
+[36mUserContentHash: ca7195ac0f[39m
+[14/11/2025, 5:26:59 PM] - [INTERNAL] - [36m{[39m
+[36m      ai_model_type: claude_ai,[39m
+[36m      ai_model: claude-haiku-4-5-20251001,[39m
+[36m      ai_temperature: 0.3,[39m
+[36m      system_prompt_hash: 7b4fddf3a8,[39m
+[36m      system_prompt_content: systemContent,[39m
+[36m      user_prompt_hash: ca7195ac0f,[39m
+[36m      user_prompt_content: userContent,[39m
+[36m      response: aiResponse,[39m
+[36m      license_key: 1a0223b6-9173-450a-b7a4-297636734467,[39m
+[36m    }[39m
+[14/11/2025, 5:26:59 PM] - [INTERNAL] - [36mSuccessfully added AI response to the cache server for the given system and user prompts[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mUpdating pom.xml[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mUpdated pom.xml with new dependencies: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mExecuting the command: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:01 PM] - [INTERNAL] - [36mCommand: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[36mExited with exitCode: 1[39m
+[36mstdout: [INFO] Scanning for projects...[39m
+[36m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[36m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[36m @ [39m
+[36m[ERROR] The build could not read 1 project -> [Help 1][39m
+[36m[ERROR]   [39m
+[36m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[36m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[36m[ERROR] [39m
+[36m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[36m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[36m[ERROR] [39m
+[36m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[36m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[36m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[36mstderr: [39m
+[14/11/2025, 5:27:01 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:02 PM] - [INTERNAL] - [36mCommand: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[36mExited with exitCode: 1[39m
+[36mstdout: [INFO] Scanning for projects...[39m
+[36m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[36m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[36m @ [39m
+[36m[ERROR] The build could not read 1 project -> [Help 1][39m
+[36m[ERROR]   [39m
+[36m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[36m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[36m[ERROR] [39m
+[36m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[36m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[36m[ERROR] [39m
+[36m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[36m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[36m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[36mstderr: [39m
+[14/11/2025, 5:27:02 PM] - [ERROR] - [31mError executing Maven validate command: [INFO] Scanning for projects...[39m
+[31m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[31m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[31m @ [39m
+[31m[ERROR] The build could not read 1 project -> [Help 1][39m
+[31m[ERROR]   [39m
+[31m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[31m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[31m[ERROR] [39m
+[31m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[31m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[31m[ERROR] [39m
+[31m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[31m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[31m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[14/11/2025, 5:27:02 PM] - [INFO] - [32mSuccessfully reverted to original pom.xml content: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:27:02 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:06 PM] - [INTERNAL] - [36mCommand: mvn --no-transfer-progress spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[36mExited with exitCode: 1[39m
+[36mstdout: [INFO] Scanning for projects...[39m
+[36m[INFO] Artifact org.apache.groovy:groovy-bom:pom:4.0.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)][39m
+[36m[INFO] Artifact org.apache.groovy:groovy-bom:pom:4.0.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)][39m
+[36m[INFO] ------------------------------------------------------------------------[39m
+[36m[INFO] BUILD FAILURE[39m
+[36m[INFO] ------------------------------------------------------------------------[39m
+[36m[INFO] Total time:  2.602 s[39m
+[36m[INFO] Finished at: 2025-11-14T17:27:06+05:30[39m
+[36m[INFO] ------------------------------------------------------------------------[39m
+[36m[ERROR] No plugin found for prefix 'spring-javaformat' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/afsal/.m2/repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1][39m
+[36m[ERROR] [39m
+[36m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[36m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[36m[ERROR] [39m
+[36m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[36m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoPluginFoundForPrefixException[39m
+[36mstderr: [39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32m[39m
+[32m        To run the Generated Java tests.[39m
+[32m        Here's the basic command structure:[39m
+[32m[39m
+[32m        mvn --no-transfer-progress clean install -Dtest=<className>[39m
+[32m[39m
+[32m        To run filtered tests based on tags.[39m
+[32m        Here's the command structure:[39m
+[32m[39m
+[32m        mvn test -Dgroups="<tagName>"[39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32mSuccessfully generated test[39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32mSuccessfully updated the report: /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/roostReport.json[39m

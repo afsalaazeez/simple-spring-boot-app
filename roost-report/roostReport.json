@@ -1,0 +1,76 @@
+{
+    "postmanCollection": {},
+    "headBranch": "roost-1763121353",
+    "reportHeadBranch": "roost-report",
+    "aiUsage": {
+        "promptTokens": 4820,
+        "completionTokens": 5635,
+        "apiCallsToAI": 5
+    },
+    "repoPath": "/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app",
+    "errorMsg": "",
+    "gitPrUrl": "",
+    "status": "completed",
+    "statusDetails": "Successfully generated test",
+    "coverageReportURL": {},
+    "testReportURL": {},
+    "testMetrics": {
+        "filesScanned": 1,
+        "totalFiles": 2,
+        "totalTestFiles": 2,
+        "successfulTests": 2,
+        "testWithCompilationErrors": 0,
+        "skippedMethods": 1,
+        "toBeProcessed": 0,
+        "testswithRunTimeErrors": 0,
+        "existingTestPresent": 0,
+        "notSupported": 1,
+        "methodsScanned": 3,
+        "methodsSuccess": 2
+    },
+    "advancedDetails": {
+        "src/main/java/com/example/demo/DemoApplication.java": {
+            "main_7bcf6cf79d": {
+                "methodName": "main",
+                "status": "not_supported",
+                "packageName": "com.example.demo",
+                "entityName": "DemoApplication",
+                "existingTestCase": [],
+                "testFilePath": "",
+                "description": "Skipped as it is the main method.",
+                "testClassName": "",
+                "feedback": []
+            }
+        },
+        "src/main/java/com/example/demo/HelloController.java": {
+            "hello_a6f1ba84b4": {
+                "methodName": "hello",
+                "status": "successfully_executed",
+                "packageName": "com.example.demo",
+                "entityName": "HelloController",
+                "existingTestCase": [],
+                "testFilePath": "src/test/java/com/example/demo/HelloControllerHelloTest.java",
+                "description": "Test generated and compiled successfully.",
+                "testClassName": "",
+                "feedback": [],
+                "scenarios": [
+                    "Verify hello() Method Returns Expected String"
+                ]
+            },
+            "apiHello_8396a0086a": {
+                "methodName": "apiHello",
+                "status": "successfully_executed",
+                "packageName": "com.example.demo",
+                "entityName": "HelloController",
+                "existingTestCase": [],
+                "testFilePath": "src/test/java/com/example/demo/HelloControllerApiHelloTest.java",
+                "description": "Test generated and compiled successfully.",
+                "testClassName": "",
+                "feedback": [],
+                "scenarios": [
+                    "Verify apiHello Returns Expected Welcome Message"
+                ]
+            }
+        }
+    }
+}

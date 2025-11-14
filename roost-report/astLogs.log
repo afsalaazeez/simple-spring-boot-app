@@ -1,0 +1,6 @@
+2025-11-14 17:26:03.467 [main] INFO  com.java.ast.processor.JavaParserProcessor - Processing Dir: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app
+2025-11-14 17:26:03.665 [main] INFO  com.java.ast.processor.JavaFileBatchProcessor - Java File Count: 2
+2025-11-14 17:26:03.982 [main] INFO  com.java.ast.processor.JavaParserProcessor - Processing Test Dir:
+2025-11-14 17:26:03.989 [main] INFO  com.java.ast.processor.JavaFileBatchProcessor - Java File Count: 0
+2025-11-14 17:26:04.144 [main] INFO  com.java.ast.processor.JavaParserProcessor - No test files found, generating JSON only for Java files.
+2025-11-14 17:26:04.154 [main] INFO  com.java.ast.processor.JavaParserProcessor - The JSON file has been saved at: /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/codeparse.json

@@ -1,0 +1,548 @@
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mRead /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/.roostgpt-internal.log and parse as JSON:false[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35maccessing file /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/1763121353.env encountered error Error: ENOENT: no such file or directory, access '/var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/1763121353.env'[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mRead /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/1763121353.env and parse as JSON:false[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mTest name java-unit-nov-14 is valid[39m
+[97m********** Validating tokens and license **********[39m
+[14/11/2025, 5:25:53 PM] - [INFO] - [32mGenerating unit tests using JUnit5 framework[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mPublic IP Address: 223.181.13.37[39m
+[14/11/2025, 5:25:53 PM] - [DEBUG] - [35mChecking if feature is enabled for license {"not_found":false,"valid":true,"thirdparty_app_id":"zbio","invocations_limit_reached":false,"is_trial":0,"created_on":"2023-06-29T13:41:20.000Z","expires_on":null,"deleted":0,"max_invocations":60000,"current_invocations":33535,"config":{"number_of_files":12,"number_of_apis":20,"number_of_functions":18},"last_invoked_on":"2025-11-14T11:46:23.000Z","gpt_tool_stack":"{\"test_type_tools\":[\"unit\",\"api-spec-test\",\"integration\",\"functional-source\",\"functional\",\"ui-test\",\"artillery-api-spec\"],\"language_tools\":[\"java\",\"csharp\",\"go\",\"python\",\"cpp\"],\"api_tools\":[\"swagger\",\"postman\",\"raml\"],\"integration_tools\":[\"jira\",\"azure\"],\"mail_tools\":[\"email\",\"slack\",\"msTeams\"]}","max_members":1}[39m
+[14/11/2025, 5:25:53 PM] - [INFO] - [32mLicense is verified[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mClaude AI Token is verified[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mTest will timeout after 1 hour[39m
+[14/11/2025, 5:25:54 PM] - [DEBUG] - [35mPublic IP Address: 223.181.13.37[39m
+[14/11/2025, 5:25:54 PM] - [DEBUG] - [35mChecking if feature is enabled for license {"not_found":false,"valid":true,"thirdparty_app_id":"zbio","invocations_limit_reached":false,"is_trial":0,"created_on":"2023-06-29T13:41:20.000Z","expires_on":null,"deleted":0,"max_invocations":60000,"current_invocations":33536,"config":{"number_of_files":12,"number_of_apis":20,"number_of_functions":18},"last_invoked_on":"2025-11-14T11:55:54.889Z","gpt_tool_stack":"{\"test_type_tools\":[\"unit\",\"api-spec-test\",\"integration\",\"functional-source\",\"functional\",\"ui-test\",\"artillery-api-spec\"],\"language_tools\":[\"java\",\"csharp\",\"go\",\"python\",\"cpp\"],\"api_tools\":[\"swagger\",\"postman\",\"raml\"],\"integration_tools\":[\"jira\",\"azure\"],\"mail_tools\":[\"email\",\"slack\",\"msTeams\"]}","max_members":1}[39m
+[14/11/2025, 5:25:54 PM] - [DEBUG] - [35mEvent type: generate[39m
+[14/11/2025, 5:25:54 PM] - [DEBUG] - [35mRoostJavaASTParser.jar already exists, checking the shashum[39m
+[14/11/2025, 5:25:54 PM] - [INFO] - [32mLicense is invoked[39m
+[97m********** Generating Tests **********[39m
+[14/11/2025, 5:25:55 PM] - [DEBUG] - [35mGlobal data updated: mvnProject set to true[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mSkipping downloading: RoostJavaASTParser.jar[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mcheckpoint-1[39m
+[14/11/2025, 5:25:55 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress -Dspring-javaformat.skip=true compile with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mProject compiled successfully.[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.1 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.11 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mreadDependenciesFromPom for depedencyArray: [object Object],[object Object],[object Object],[object Object][39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mFollowing are the dependencies for the given code: org.springframework.boot[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mcheckpoint-1.2 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mUpdating pom.xml[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mPlugin added in pom.xml org.jacoco[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mPlugin added in pom.xml org.apache.maven.plugins[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mPlugin added in pom.xml org.apache.maven.plugins[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mPlugin added in pom.xml org.apache.maven.plugins[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mPlugin added in pom.xml io.spring.javaformat[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mDependency added in pom.xml io.spring.javaformat[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mDependency added in pom.xml org.mockito[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mDependency added in pom.xml io.spring.javaformat[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mDependency added in pom.xml org.mockito[39m
+[14/11/2025, 5:25:58 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mUpdated pom.xml with new dependencies: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:25:58 PM] - [INFO] - [32mExecuting the command: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:00 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:02 PM] - [ERROR] - [31mError executing Maven validate command: [INFO] Scanning for projects...[39m
+[31m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[31m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[31m @ [39m
+[31m[ERROR] The build could not read 1 project -> [Help 1][39m
+[31m[ERROR]   [39m
+[31m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[31m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[31m[ERROR] [39m
+[31m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[31m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[31m[ERROR] [39m
+[31m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[31m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[31m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[14/11/2025, 5:26:02 PM] - [DEBUG] - [35mSuccessfully copied file from /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml to /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml.bak[39m
+[14/11/2025, 5:26:02 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:02 PM] - [DEBUG] - [35mpackagesFilter [39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mSuccessfully reverted to original pom.xml content: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mParsing data from AST Parser...[39m
+[14/11/2025, 5:26:02 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/codeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mRead /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/codeparse.json and parse as JSON:true[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mGenerating Unit test using AST parser data.[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-2 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-3 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-2.1 generateJavaUnitTest - filesList: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java,/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-4 : Generating Java Unit Tests...[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java and parse as JSON:false[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.13 :pass check /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.2 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java and parse as JSON:false[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.3 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.52 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.6 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-7 entitiy info DemoApplication[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-6 : entity [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java and parse as JSON:false[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-9.1 token limit main[39m
+[14/11/2025, 5:26:04 PM] - [WARNING] - [33mSkipping test generation for the main method.[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.13 :pass check /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.2 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java and parse as JSON:false[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.3 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.5 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.52 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-5.6 :astParserInfo /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-7 entitiy info HelloController[39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-6 : entity [object Object][39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35mpromptQueryPath is S3.DEFAULT.DEFAULT.JAVA.scenario and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:04 PM] - [INFO] - [32mcheckpoint-9.1 token limit hello[39m
+[97m~~~~~~~~~~ Generating test for the method: hello from the file src/main/java/com/example/demo/HelloController.java ~~~~~~~~~~[39m
+[14/11/2025, 5:26:04 PM] - [DEBUG] - [35msleeping for 1 seconds[39m
+[14/11/2025, 5:26:19 PM] - [DEBUG] - [35mpromptQueryPath is S3.DEFAULT.UNIT.JAVA.security and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:19 PM] - [DEBUG] - [35mSkipping vulnerability gen[39m
+[14/11/2025, 5:26:19 PM] - [DEBUG] - [35mpromptQueryPath is S3.CLAUDE.UNIT.JAVA.systemPrompt and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:19 PM] - [DEBUG] - [35mpromptQueryPath is S3.CLAUDE.UNIT.JAVA.create and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:19 PM] - [DEBUG] - [35msleeping for 1 seconds[39m
+[14/11/2025, 5:26:27 PM] - [DEBUG] - [35mGenerated test cases have only one class:[39m
+[35mclass HelloControllerHelloTest {[39m
+[35m[39m
+[35m    private HelloController helloController;[39m
+[35m[39m
+[35m    @BeforeEach[39m
+[35m    void setUp() {[39m
+[35m        helloController = new HelloController();[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns expected string")[39m
+[35m    void helloReturnsExpectedString() {[39m
+[35m        // Arrange[39m
+[35m        String expectedOutput = "Hello, Spring Boot!";[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String actualOutput = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedOutput, actualOutput, [39m
+[35m            "hello() method should return 'Hello, Spring Boot!'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns non-null value")[39m
+[35m    void helloReturnsNonNullValue() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertNotNull(result, "hello() method should not return null");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns non-empty string")[39m
+[35m    void helloReturnsNonEmptyString() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertFalse(result.isEmpty(), "hello() method should return non-empty string");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns exact string with correct length")[39m
+[35m    void helloReturnsCorrectLength() {[39m
+[35m        // Arrange[39m
+[35m        String expectedOutput = "Hello, Spring Boot!";[39m
+[35m        int expectedLength = 20;[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedLength, result.length(), [39m
+[35m            "hello() method should return string of length 20");[39m
+[35m        assertEquals(expectedOutput.length(), result.length(), [39m
+[35m            "Returned string length should match expected output length");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns consistent results on multiple calls")[39m
+[35m    void helloReturnsConsistentResults() {[39m
+[35m        // Act[39m
+[35m        String firstCall = helloController.hello();[39m
+[35m        String secondCall = helloController.hello();[39m
+[35m        String thirdCall = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(firstCall, secondCall, [39m
+[35m            "Multiple calls to hello() should return same value");[39m
+[35m        assertEquals(secondCall, thirdCall, [39m
+[35m            "Multiple calls to hello() should return same value");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns string with correct content")[39m
+[35m    void helloReturnsCorrectContent() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.contains("Hello"), [39m
+[35m            "Returned string should contain 'Hello'");[39m
+[35m        assertTrue(result.contains("Spring Boot"), [39m
+[35m            "Returned string should contain 'Spring Boot'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns string starting with 'Hello'")[39m
+[35m    void helloReturnsStringStartingWithHello() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.startsWith("Hello"), [39m
+[35m            "Returned string should start with 'Hello'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns string ending with exclamation mark")[39m
+[35m    void helloReturnsStringEndingWithExclamation() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.endsWith("!"), [39m
+[35m            "Returned string should end with '!'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method does not return null or empty after trimming")[39m
+[35m    void helloReturnsValidTrimmedString() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertNotNull(result.trim(), "Trimmed result should not be null");[39m
+[35m        assertFalse(result.trim().isEmpty(), "Trimmed result should not be empty");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("Verify hello() method returns exact case-sensitive string")[39m
+[35m    void helloReturnsCaseSensitiveString() {[39m
+[35m        // Arrange[39m
+[35m        String expectedOutput = "Hello, Spring Boot!";[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String result = helloController.hello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedOutput, result, [39m
+[35m            "hello() method should return exact case-sensitive string");[39m
+[35m        assertNotEquals("hello, spring boot!", result, [39m
+[35m            "Returned string should be case-sensitive");[39m
+[35m    }[39m
+[35m}[39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mGlobal data updated: testsGenerated set to true[39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mpackagesFilter [39m
+[14/11/2025, 5:26:28 PM] - [DEBUG] - [35mError parsing test code of file /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java: spawn ENOTDIR[39m
+[35m Going ahead with the regex approach[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mSuccessfully written test for method hello into src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java"}[39m
+[14/11/2025, 5:26:28 PM] - [ERROR] - [31mError executing command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java"} with error: Error: spawn ENOTDIR[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mCompiling  the test...[39m
+[14/11/2025, 5:26:28 PM] - [INFO] - [32mExecuting the command: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mGlobal data updated: roostASTData set to [object Object][39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mGlobal data updated: javaImports set to import org.junit.jupiter.api.BeforeEach;,import org.junit.jupiter.api.DisplayName;,import org.junit.jupiter.api.Tag;,import org.junit.jupiter.api.Test;,import static org.junit.jupiter.api.Assertions.*;,import org.junit.jupiter.api.*;,import org.springframework.web.bind.annotation.GetMapping;,import org.springframework.web.bind.annotation.RestController;[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mSuccessfully generated and compiled test src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java and parse as JSON:false[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mSuccessfully added tags in /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerHelloTest.java[39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mcheckpoint-8 entitiy info [object Object][39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35mpromptQueryPath is S3.DEFAULT.DEFAULT.JAVA.scenario and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mcheckpoint-9.1 token limit apiHello[39m
+[97m~~~~~~~~~~ Generating test for the method: apiHello from the file src/main/java/com/example/demo/HelloController.java ~~~~~~~~~~[39m
+[14/11/2025, 5:26:32 PM] - [DEBUG] - [35msleeping for 1 seconds[39m
+[14/11/2025, 5:26:43 PM] - [DEBUG] - [35mpromptQueryPath is S3.DEFAULT.UNIT.JAVA.security and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:43 PM] - [DEBUG] - [35mSkipping vulnerability gen[39m
+[14/11/2025, 5:26:43 PM] - [DEBUG] - [35mpromptQueryPath is S3.CLAUDE.UNIT.JAVA.systemPrompt and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:43 PM] - [DEBUG] - [35mpromptQueryPath is S3.CLAUDE.UNIT.JAVA.create and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:43 PM] - [DEBUG] - [35msleeping for 1 seconds[39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mGenerated test cases have only one class:[39m
+[35m@DisplayName("HelloController API Hello Tests")[39m
+[35mclass HelloControllerApiHelloTest {[39m
+[35m[39m
+[35m    private HelloController helloController;[39m
+[35m[39m
+[35m    @BeforeEach[39m
+[35m    void setUp() {[39m
+[35m        helloController = new HelloController();[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Expected Welcome Message")[39m
+[35m    void apiHelloReturnsWelcomeMessage() {[39m
+[35m        // Arrange[39m
+[35m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String actualMessage = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedMessage, actualMessage, "apiHello() should return the exact welcome message");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Non-Null Value")[39m
+[35m    void apiHelloReturnsNonNullValue() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertNotNull(result, "apiHello() should not return null");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Non-Empty String")[39m
+[35m    void apiHelloReturnsNonEmptyString() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertFalse(result.isEmpty(), "apiHello() should return a non-empty string");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns String With Expected Length")[39m
+[35m    void apiHelloReturnsStringWithExpectedLength() {[39m
+[35m        // Arrange[39m
+[35m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[35m        int expectedLength = expectedMessage.length();[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedLength, result.length(), "apiHello() should return a string with the expected length");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Consistent Results")[39m
+[35m    void apiHelloReturnsConsistentResults() {[39m
+[35m        // Act[39m
+[35m        String firstCall = helloController.apiHello();[39m
+[35m        String secondCall = helloController.apiHello();[39m
+[35m        String thirdCall = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(firstCall, secondCall, "Multiple calls should return the same message");[39m
+[35m        assertEquals(secondCall, thirdCall, "Multiple calls should return the same message");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Message Containing Expected Keywords")[39m
+[35m    void apiHelloReturnsMessageContainingExpectedKeywords() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.contains("Welcome"), "Message should contain 'Welcome'");[39m
+[35m        assertTrue(result.contains("Spring Boot"), "Message should contain 'Spring Boot'");[39m
+[35m        assertTrue(result.contains("REST API"), "Message should contain 'REST API'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Message With Correct Case")[39m
+[35m    void apiHelloReturnsMessageWithCorrectCase() {[39m
+[35m        // Arrange[39m
+[35m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedMessage, result, "apiHello() should return message with correct case sensitivity");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Message Starting With Welcome")[39m
+[35m    void apiHelloReturnsMessageStartingWithWelcome() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.startsWith("Welcome"), "Message should start with 'Welcome'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns Message Ending With API")[39m
+[35m    void apiHelloReturnsMessageEndingWithApi() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertTrue(result.endsWith("API"), "Message should end with 'API'");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Does Not Return Blank String")[39m
+[35m    void apiHelloDoesNotReturnBlankString() {[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertFalse(result.isBlank(), "apiHello() should not return a blank string");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("boundary")[39m
+[35m    @DisplayName("apiHello Returns String With Exact Expected Content")[39m
+[35m    void apiHelloReturnsStringWithExactExpectedContent() {[39m
+[35m        // Arrange[39m
+[35m        String expectedMessage = "Welcome to Spring Boot REST API";[39m
+[35m[39m
+[35m        // Act[39m
+[35m        String result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertEquals(expectedMessage, result);[39m
+[35m        assertNotEquals("Welcome to Spring Boot REST API ", result, "Should not have trailing spaces");[39m
+[35m        assertNotEquals(" Welcome to Spring Boot REST API", result, "Should not have leading spaces");[39m
+[35m    }[39m
+[35m[39m
+[35m    @Test[39m
+[35m    @Tag("valid")[39m
+[35m    @DisplayName("apiHello Returns String Type")[39m
+[35m    void apiHelloReturnsStringType() {[39m
+[35m        // Act[39m
+[35m        Object result = helloController.apiHello();[39m
+[35m[39m
+[35m        // Assert[39m
+[35m        assertInstanceOf(String.class, result, "apiHello() should return a String instance");[39m
+[35m    }[39m
+[35m}[39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mGlobal data updated: testsGenerated set to true[39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mpackagesFilter [39m
+[14/11/2025, 5:26:52 PM] - [DEBUG] - [35mError parsing test code of file /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java: spawn ENOTDIR[39m
+[35m Going ahead with the regex approach[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mSuccessfully written test for method apiHello into src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mExecuting the command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java"}[39m
+[14/11/2025, 5:26:52 PM] - [ERROR] - [31mError executing command: java -jar /var/tmp/Roost/bin/RoostJavaASTParser.jar -root /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app -p /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java -o /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testcodeparse.json -l /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/astTestFileLogs.log with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java"} with error: Error: spawn ENOTDIR[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mCompiling  the test...[39m
+[14/11/2025, 5:26:52 PM] - [INFO] - [32mExecuting the command: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mGlobal data updated: roostASTData set to [object Object][39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mGlobal data updated: javaImports set to import org.junit.jupiter.params.ParameterizedTest;,import org.junit.jupiter.params.provider.ValueSource;[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mSuccessfully generated and compiled test src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java and parse as JSON:false[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mSuccessfully added tags in /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mtestFile for Git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mAdded Roost comment for the file src/test/java/com/example/demo/HelloControllerApiHelloTest.java[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mSuccessfully written '/var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/testMap.json'[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mpromptQueryPath is S3.DEFAULT.DEFAULT.JAVA.pom and promptQueryMap is [object Object][39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:26:55 PM] - [DEBUG] - [35msleeping for 1 seconds[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mUpdating pom.xml[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.platform[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.platform[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.jupiter[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.platform[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mDependency added in pom.xml org.junit.platform[39m
+[14/11/2025, 5:26:59 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mUpdated pom.xml with new dependencies: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:26:59 PM] - [INFO] - [32mExecuting the command: mvn spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:01 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress validate -f pom.xml with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:02 PM] - [ERROR] - [31mError executing Maven validate command: [INFO] Scanning for projects...[39m
+[31m[ERROR] [ERROR] Some problems were encountered while processing the POMs:[39m
+[31m[ERROR] Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14[39m
+[31m @ [39m
+[31m[ERROR] The build could not read 1 project -> [Help 1][39m
+[31m[ERROR]   [39m
+[31m[ERROR]   The project com.example:simple-spring-boot-app:1.0.0 (/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml) has 1 error[39m
+[31m[ERROR]     Malformed POM /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</dependency>\n    <groupId>... @34:14)  @ /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml, line 34, column 14 -> [Help 2][39m
+[31m[ERROR] [39m
+[31m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[31m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[31m[ERROR] [39m
+[31m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[31m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException[39m
+[31m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException[39m
+[14/11/2025, 5:27:02 PM] - [DEBUG] - [35mSuccessfully copied file from /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml to /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml.bak[39m
+[14/11/2025, 5:27:02 PM] - [DEBUG] - [35mAdd file to git: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:27:02 PM] - [DEBUG] - [35mFormatting Java Maven project[39m
+[14/11/2025, 5:27:02 PM] - [INFO] - [32mSuccessfully reverted to original pom.xml content: /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml[39m
+[14/11/2025, 5:27:02 PM] - [INFO] - [32mExecuting the command: mvn --no-transfer-progress spring-javaformat:apply with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mError formatting Java test: [INFO] Scanning for projects...[39m
+[35m[INFO] Artifact org.apache.groovy:groovy-bom:pom:4.0.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)][39m
+[35m[INFO] Artifact org.apache.groovy:groovy-bom:pom:4.0.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)][39m
+[35m[INFO] ------------------------------------------------------------------------[39m
+[35m[INFO] BUILD FAILURE[39m
+[35m[INFO] ------------------------------------------------------------------------[39m
+[35m[INFO] Total time:  2.602 s[39m
+[35m[INFO] Finished at: 2025-11-14T17:27:06+05:30[39m
+[35m[INFO] ------------------------------------------------------------------------[39m
+[35m[ERROR] No plugin found for prefix 'spring-javaformat' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/afsal/.m2/repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1][39m
+[35m[ERROR] [39m
+[35m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.[39m
+[35m[ERROR] Re-run Maven using the -X switch to enable full debug logging.[39m
+[35m[ERROR] [39m
+[35m[ERROR] For more information about the errors and possible solutions, please read the following articles:[39m
+[35m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoPluginFoundForPrefixException[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mTimeout with ID 4507 has been cleared[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mupdateDependenciesAndReport called[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mRead /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/pom.xml and parse as JSON:false[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mFor /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app, user does not want to execute tests and verify flag is also not set[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mgitOps is disabled[39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32m[39m
+[32m        To run the Generated Java tests.[39m
+[32m        Here's the basic command structure:[39m
+[32m[39m
+[32m        mvn --no-transfer-progress clean install -Dtest=<className>[39m
+[32m[39m
+[32m        To run filtered tests based on tags.[39m
+[32m        Here's the command structure:[39m
+[32m[39m
+[32m        mvn test -Dgroups="<tagName>"[39m
+[14/11/2025, 5:27:06 PM] - [DEBUG] - [35mSuccessfully copied file from /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/1763121353.env to /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/1763121353_1763121353_generate.env[39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32mSuccessfully generated test[39m
+[14/11/2025, 5:27:06 PM] - [INFO] - [32mSuccessfully updated the report: /var/tmp/Roost/RoostGPT/java-unit-nov-14/1763121353/roostReport.json[39m

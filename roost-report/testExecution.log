@@ -1,0 +1,68 @@
+[14/11/2025, 5:26:32 PM] - [INFO] - [32mCommand: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[32mExited with exitCode: 0[39m
+[32mstdout: [INFO] Scanning for projects...[39m
+[32m[INFO] [39m
+[32m[INFO] -----------------< com.example:simple-spring-boot-app >-----------------[39m
+[32m[INFO] Building Simple Spring Boot Application 1.0.0[39m
+[32m[INFO]   from pom.xml[39m
+[32m[INFO] --------------------------------[ jar ]---------------------------------[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:resources (default-resources) @ simple-spring-boot-app ---[39m
+[32m[INFO] Copying 1 resource from src/main/resources to target/classes[39m
+[32m[INFO] Copying 0 resource from src/main/resources to target/classes[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:compile (default-compile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Nothing to compile - all classes are up to date[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:testResources (default-testResources) @ simple-spring-boot-app ---[39m
+[32m[INFO] skip non existing resourceDirectory /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/resources[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Changes detected - recompiling the module! :input tree[39m
+[32m[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] BUILD SUCCESS[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] Total time:  1.879 s[39m
+[32m[INFO] Finished at: 2025-11-14T17:26:31+05:30[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32mstderr: [39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[14/11/2025, 5:26:55 PM] - [INFO] - [32mCommand: mvn test-compile -Dspring-javaformat.skip=true with option {"cwd":"/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app"}[39m
+[32mExited with exitCode: 0[39m
+[32mstdout: [INFO] Scanning for projects...[39m
+[32m[INFO] [39m
+[32m[INFO] -----------------< com.example:simple-spring-boot-app >-----------------[39m
+[32m[INFO] Building Simple Spring Boot Application 1.0.0[39m
+[32m[INFO]   from pom.xml[39m
+[32m[INFO] --------------------------------[ jar ]---------------------------------[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:resources (default-resources) @ simple-spring-boot-app ---[39m
+[32m[INFO] Copying 1 resource from src/main/resources to target/classes[39m
+[32m[INFO] Copying 0 resource from src/main/resources to target/classes[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:compile (default-compile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Nothing to compile - all classes are up to date[39m
+[32m[INFO] [39m
+[32m[INFO] --- resources:3.3.1:testResources (default-testResources) @ simple-spring-boot-app ---[39m
+[32m[INFO] skip non existing resourceDirectory /Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/test/resources[39m
+[32m[INFO] [39m
+[32m[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ simple-spring-boot-app ---[39m
+[32m[INFO] Changes detected - recompiling the module! :input tree[39m
+[32m[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] BUILD SUCCESS[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32m[INFO] Total time:  1.321 s[39m
+[32m[INFO] Finished at: 2025-11-14T17:26:55+05:30[39m
+[32m[INFO] ------------------------------------------------------------------------[39m
+[32mstderr: [39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m
+[32m[39m

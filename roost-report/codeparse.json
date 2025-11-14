@@ -1,0 +1,89 @@
+{
+  "com.example.demo" : {
+    "/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/DemoApplication.java" : {
+      "imports" : [ {
+        "dereferencedParts" : [ ],
+        "name" : "org.springframework.boot.SpringApplication"
+      }, {
+        "dereferencedParts" : [ ],
+        "name" : "org.springframework.boot.autoconfigure.SpringBootApplication"
+      } ],
+      "classes" : [ {
+        "name" : "DemoApplication",
+        "comments" : null,
+        "annotations" : [ "@SpringBootApplication" ],
+        "methods" : [ {
+          "name" : "main",
+          "arguments" : [ "String[] args" ],
+          "accessModifier" : "public,static",
+          "methodsCalled" : [ {
+            "name" : "run",
+            "arguments" : [ "DemoApplication.class", "args" ],
+            "body" : ""
+          } ],
+          "usedEntities" : [ "SpringApplication", "args" ],
+          "annotations" : [ ],
+          "returnType" : "void",
+          "comments" : null,
+          "methodDefinition" : "public static void main(String[] args) {\n    SpringApplication.run(DemoApplication.class, args);\n}",
+          "test_exists" : false
+        } ],
+        "fields" : [ ],
+        "constructors" : [ ],
+        "extends" : [ ],
+        "implements" : [ ],
+        "nestedClass" : null,
+        "accessSpecifier" : "public",
+        "records" : [ ]
+      } ],
+      "records" : [ ],
+      "samePackageClasses" : [ ]
+    },
+    "/Users/afsal/Documents/Workspace/ZBIO_Space/Input_files/Test_Java/simple-spring-boot-app/src/main/java/com/example/demo/HelloController.java" : {
+      "imports" : [ {
+        "dereferencedParts" : [ ],
+        "name" : "org.springframework.web.bind.annotation.GetMapping"
+      }, {
+        "dereferencedParts" : [ ],
+        "name" : "org.springframework.web.bind.annotation.RestController"
+      } ],
+      "classes" : [ {
+        "name" : "HelloController",
+        "comments" : null,
+        "annotations" : [ "@RestController" ],
+        "methods" : [ {
+          "name" : "hello",
+          "arguments" : [ ],
+          "accessModifier" : "public",
+          "methodsCalled" : [ ],
+          "usedEntities" : [ ],
+          "annotations" : [ "@GetMapping(\"/\")" ],
+          "returnType" : "String",
+          "comments" : null,
+          "methodDefinition" : "public String hello() {\n    return \"Hello, Spring Boot!\";\n}",
+          "test_exists" : false
+        }, {
+          "name" : "apiHello",
+          "arguments" : [ ],
+          "accessModifier" : "public",
+          "methodsCalled" : [ ],
+          "usedEntities" : [ ],
+          "annotations" : [ "@GetMapping(\"/api/hello\")" ],
+          "returnType" : "String",
+          "comments" : null,
+          "methodDefinition" : "public String apiHello() {\n    return \"Welcome to Spring Boot REST API\";\n}",
+          "test_exists" : false
+        } ],
+        "fields" : [ ],
+        "constructors" : [ ],
+        "extends" : [ ],
+        "implements" : [ ],
+        "nestedClass" : null,
+        "accessSpecifier" : "public",
+        "records" : [ ]
+      } ],
+      "records" : [ ],
+      "samePackageClasses" : [ ]
+    }
+  }
+}
