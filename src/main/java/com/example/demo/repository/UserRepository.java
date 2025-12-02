@@ -108,4 +108,53 @@ public class UserRepository {
     public long count() {
         return users.size();
     }
+
+    /**
+     * Find all active users (both USER and ADMIN roles).
+     * This method demonstrates an internal call to findByRole().
+     *
+     * @return List of all active users
+     */
+    public List<User> findAllActiveUsers() {
+        List<User> activeUsers = new ArrayList<>();
+        // Internal call to findByRole for USER role
+        activeUsers.addAll(findByRole("USER"));
+        // Internal call to findByRole for ADMIN role
+        activeUsers.addAll(findByRole("ADMIN"));
+        return activeUsers;
+    }
+
+    /**
+     * Save user with existence check.
+     * This method demonstrates an internal call to existsById().
+     *
+     * @param user        User to save
+     * @param allowUpdate Whether to allow updating existing user
+     * @return Saved user
+     * @throws IllegalStateException if user exists and allowUpdate is false
+     */
+    public User saveWithValidation(User user, boolean allowUpdate) {
+        if (user.getId() != null && existsById(user.getId()) && !allowUpdate) {
+            throw new IllegalStateException("User already exists with id: " + user.getId());
+        }
+        // Internal call to save method
+        return save(user);
+    }
+
+    /**
+     * Delete user by email.
+     * This method demonstrates internal calls to findByEmail() and deleteById().
+     *
+     * @param email User email
+     * @return true if deleted, false if not found
+     */
+    public boolean deleteByEmail(String email) {
+        // Internal call to findByEmail
+        Optional<User> user = findByEmail(email);
+        if (user.isPresent()) {
+            // Internal call to deleteById
+            return deleteById(user.get().getId());
+        }
+        return false;
+    }
 }
