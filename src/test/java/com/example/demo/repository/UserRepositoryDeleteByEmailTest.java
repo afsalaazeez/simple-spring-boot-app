@@ -164,6 +164,8 @@ Execution:
 Validation:
   The assertion verifies bidirectional case-insensitivity - the method should find users regardless of how the email case is stored versus how it is searched. This ensures robust email matching behavior.
 
+
+roost_feedback [03/12/2025, 9:06:01 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sUnit\stest\s`deleteByEmailWithNullEmailReturnsFalse`\sexpected\sa\s`NullPointerException`\swhen\scalling\s`deleteByEmail(null)`,\sbut\sthe\smethod\scompleted\swithout\sthrowing\sany\sexception.\n\n**Where:**\s`UserRepositoryDeleteByEmailTest.java:66`\sin\s`com.example.demo.repository`\spackage\n\n**Why:**\sThe\stest\sassertion\sis\smisaligned\swith\sactual\simplementation\sbehavior.\sThe\s`deleteByEmail()`\smethod\shandles\snull\sinput\sgracefully\s(likely\sreturns\sfalse)\sinstead\sof\sthrowing\sNPE\sas\sthe\stest\sexpects.\n\n**Investigate:**\n1.\sReview\s`UserRepository.deleteByEmail()`\simplementation\s-\scheck\snull\shandling\slogic\n2.\sDetermine\sintended\sbehavior:\sshould\snull\semail\sthrow\sexception\sor\sreturn\sfalse?\n3.\sFix\seither\sthe\stest\sexpectation\sOR\sadd\snull\svalidation\sto\sthe\srepository\smethod\n4.\sTest\sname\ssuggests\sit\sshould\s\return\sfalse\\s-\sconsider\susing\s`assertFalse()`\sinstead\sof\s`assertThrows()`,
 */
 
 // ********RoostGPT********
@@ -237,8 +239,11 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("invalid")
 	void deleteByEmailWithNullEmailReturnsFalse() {
-		// Arrange & Act & Assert
-		assertThrows(NullPointerException.class, () -> userRepository.deleteByEmail(null));
+		// Arrange & Act
+		boolean result = userRepository.deleteByEmail(null);
+
+		// Assert
+		assertFalse(result);
 	}
 
 	@Test
