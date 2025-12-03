@@ -102,6 +102,8 @@ Validation:
 
 
 roost_feedback [03/12/2025, 7:52:21 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sJUnit\sassertion\sfailed\s-\sstring\slength\scheck\sexpected\s20\scharacters\sbut\sreceived\s19\n\n**Where:**\s`HelloControllerHelloTest.helloReturnsStringWithExpectedLength()`\sat\sline\s92\sin\s`HelloControllerHelloTest.java`\n\n**Why:**\sThe\s`hello()`\smethod\sreturns\sa\sstring\sthat\sis\s1\scharacter\sshorter\sthan\sthe\stest\sexpects.\sEither\sthe\simplementation\schanged\s(removed\sa\scharacter/space)\sor\sthe\stest\sexpectation\sis\sincorrect.\n\n**Investigate:**\n1.\sCheck\s`HelloController.hello()`\smethod\'s\sreturn\svalue\s-\scount\sactual\scharacters\n2.\sReview\srecent\schanges\sto\sthe\shello\sendpoint\sresponse\sstring\n3.\sVerify\stest\sassertion\sat\sline\s92\s-\sconfirm\sexpected\slength\sof\s20\sis\scorrect\n4.\sLook\sfor\soff-by-one\sissues\s(trailing\sspace,\spunctuation,\sor\snewline\sdifferences),
+
+roost_feedback [03/12/2025, 8:09:20 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.
 */
 
 // ********RoostGPT********
@@ -123,6 +125,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
+import java.lang.reflect.Field;
 
 @ExtendWith(MockitoExtension.class)
 class HelloControllerHelloTest {
@@ -136,37 +139,36 @@ class HelloControllerHelloTest {
 	private HelloController helloController;
 
 	@BeforeEach
-	void setUp() {
-		helloController = new HelloController(userService, productService);
+	void setUp() throws Exception {
+		helloController = new HelloController();
+		
+		Field userServiceField = HelloController.class.getDeclaredField("userService");
+		userServiceField.setAccessible(true);
+		userServiceField.set(helloController, userService);
+		
+		Field productServiceField = HelloController.class.getDeclaredField("productService");
+		productServiceField.setAccessible(true);
+		productServiceField.set(helloController, productService);
 	}
 
 	@Test
 	@Tag("valid")
 	void helloReturnsCorrectGreetingMessage() {
-		// Arrange - already done in setUp
-		// Act
 		String result = helloController.hello();
-		// Assert
 		assertEquals("Hello, Spring Boot!", result);
 	}
 
 	@Test
 	@Tag("valid")
 	void helloReturnsNonNullValue() {
-		// Arrange - already done in setUp
-		// Act
 		String result = helloController.hello();
-		// Assert
 		assertNotNull(result);
 	}
 
 	@Test
 	@Tag("valid")
 	void helloReturnsNonEmptyString() {
-		// Arrange - already done in setUp
-		// Act
 		String result = helloController.hello();
-		// Assert
 		assertFalse(result.isEmpty());
 		assertTrue(result.length() > 0);
 	}
@@ -174,12 +176,9 @@ class HelloControllerHelloTest {
 	@Test
 	@Tag("valid")
 	void helloReturnsConsistentResultOnMultipleInvocations() {
-		// Arrange - already done in setUp
-		// Act
 		String result1 = helloController.hello();
 		String result2 = helloController.hello();
 		String result3 = helloController.hello();
-		// Assert
 		assertEquals(result1, result2);
 		assertEquals(result2, result3);
 		assertEquals("Hello, Spring Boot!", result1);
@@ -190,10 +189,7 @@ class HelloControllerHelloTest {
 	@Test
 	@Tag("valid")
 	void helloMethodIsIndependentOfInjectedServices() {
-		// Arrange - already done in setUp
-		// Act
 		String result = helloController.hello();
-		// Assert
 		assertEquals("Hello, Spring Boot!", result);
 		verifyNoInteractions(userService);
 		verifyNoInteractions(productService);
@@ -202,10 +198,7 @@ class HelloControllerHelloTest {
 	@Test
 	@Tag("boundary")
 	void helloReturnsStringWithExpectedLength() {
-		// Arrange - already done in setUp
-		// Act
 		String result = helloController.hello();
-		// Assert
 		assertEquals(19, result.length());
 	}
 
