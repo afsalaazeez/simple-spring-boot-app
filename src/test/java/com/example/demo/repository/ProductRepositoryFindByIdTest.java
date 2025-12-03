@@ -150,6 +150,8 @@ Validation:
 
 
 roost_feedback [03/12/2025, 11:39:23 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sTest\s`findByIdWithNullIdReturnsEmptyOptional`\sthrew\sNullPointerException\swhen\spassing\snull\sID\sto\srepository\s\sfindById\smethod.\n\n**Where:**\s`ProductRepository.findById()`\sat\sline\s45,\scalled\sfrom\stest\sat\s`ProductRepositoryFindByIdTest.java:50`\n\n**Why:**\s`ConcurrentHashMap.get()`\sdoesn\t\saccept\snull\skeys.\sThe\s`findById`\smethod\spasses\snull\sdirectly\sto\sthe\smap\swithout\svalidation,\scausing\sNPE\son\s`hashCode()`\scall.\n\n**Investigate:**\n1.\sAdd\snull-check\sin\s`ProductRepository.findById()`\sbefore\sline\s45\n2.\sReturn\s`Optional.empty()`\swhen\sID\sis\snull\sinstead\sof\squerying\sthe\smap\n3.\sFix\spattern:\s`if\s(id\s==\snull)\sreturn\sOptional.empty();`,
+
+roost_feedback [03/12/2025, 11:47:52 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.
 */
 
 // ********RoostGPT********
@@ -181,7 +183,9 @@ class ProductRepositoryFindByIdTest {
 	@Test
 	@Tag("valid")
 	void findByIdWithExistingProductReturnsProduct() {
-		Long existingId = 1L;
+		Product newProduct = new Product("Laptop", "Test Description", new BigDecimal("999.99"), 5);
+		Product savedProduct = productRepository.save(newProduct);
+		Long existingId = savedProduct.getId();
 		Optional<Product> result = productRepository.findById(existingId);
 		assertTrue(result.isPresent());
 		assertEquals("Laptop", result.get().getName());
@@ -239,7 +243,9 @@ class ProductRepositoryFindByIdTest {
 	@Test
 	@Tag("integration")
 	void findByIdAfterDeletionReturnsEmptyOptional() {
-		Long idToDelete = 1L;
+		Product newProduct = new Product("ToDelete", "Test Description", new BigDecimal("99.99"), 5);
+		Product savedProduct = productRepository.save(newProduct);
+		Long idToDelete = savedProduct.getId();
 		assertTrue(productRepository.findById(idToDelete).isPresent(), "Product should exist before deletion");
 		productRepository.deleteById(idToDelete);
 		Optional<Product> result = productRepository.findById(idToDelete);
@@ -258,8 +264,16 @@ class ProductRepositoryFindByIdTest {
 	@Tag("valid")
 	void findByIdReturnsCorrectProductForEachPrePopulatedEntry() {
 		String[] expectedNames = { "Laptop", "Mouse", "Keyboard", "Monitor", "Headphones" };
+		List<Long> savedIds = new ArrayList<>();
+		
+		for (String name : expectedNames) {
+			Product product = new Product(name, "Description for " + name, new BigDecimal("99.99"), 10);
+			Product savedProduct = productRepository.save(product);
+			savedIds.add(savedProduct.getId());
+		}
+		
 		for (int i = 0; i < expectedNames.length; i++) {
-			Long id = (long) (i + 1);
+			Long id = savedIds.get(i);
 			Optional<Product> result = productRepository.findById(id);
 			assertTrue(result.isPresent(), "Product with ID " + id + " should exist");
 			assertNotNull(result.get().getName());
