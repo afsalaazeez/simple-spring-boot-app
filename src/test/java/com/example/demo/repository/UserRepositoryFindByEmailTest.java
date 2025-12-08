@@ -196,6 +196,8 @@ Execution:
 Validation:
   The assertion confirms that the method handles emails with valid special characters (like +, ., -) correctly. This is important as many email addresses contain such characters.
 
+
+roost_feedback [08/12/2025, 7:13:07 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sUnit\stest\s`findByEmailWithNullEmail`\sexpected\sa\s`NullPointerException`\swhen\scalling\s`findByEmail(null)`,\sbut\sthe\smethod\sexecuted\swithout\sthrowing\sany\sexception.\n\n**Where:**\s`UserRepositoryFindByEmailTest.java:75`\sin\smethod\s`findByEmailWithNullEmail`\n\n**Why:**\sThe\stest\sassumption\sis\sincorrect\s-\sthe\srepository\s\s`findByEmail()`\smethod\shandles\snull\sinput\sgracefully\s(likely\sreturns\snull/empty)\sinstead\sof\sthrowing\sNPE.\sSpring\sData\srepositories\stypically\sdon\t\sthrow\sNPE\sfor\snull\sparameters.\n\n**Investigate:**\n1.\sReview\s`UserRepository.findByEmail()`\simplementation\s-\sverify\sactual\snull-handling\sbehavior\n2.\sDetermine\sif\stest\sexpectation\sis\swrong\s(update\stest)\sor\sif\snull\svalidation\sshould\sbe\sadded\sto\srepository\n3.\sConsider\sif\s`Optional.empty()`\sor\s`null`\sreturn\sis\sthe\sintended\sbehavior\sfor\snull\sinput\n\nThe\stest\slogic\sneeds\scorrection\s-\seither\sremove\sthe\sNPE\sassertion\sor\sadd\sexplicit\snull\svalidation\sto\sthe\srepository\smethod.,
 */
 
 // ********RoostGPT********
@@ -280,8 +282,11 @@ class UserRepositoryFindByEmailTest {
 	void findByEmailWithNullEmail() {
 		// Arrange - Use default UserRepository
 
-		// Act & Assert
-		assertThrows(NullPointerException.class, () -> userRepository.findByEmail(null));
+		// Act
+		Optional<User> result = userRepository.findByEmail(null);
+
+		// Assert - Repository handles null gracefully by returning empty Optional
+		assertFalse(result.isPresent());
 	}
 
 	@Test
