@@ -166,6 +166,8 @@ Validation:
 
 
 roost_feedback [08/12/2025, 12:56:56 PM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\s3\sunit\stests\sin\s`UserRepositoryDeleteByEmailTest`\s-\sthe\s`deleteByEmail()`\smethod\sreturns\sincorrect\sboolean\svalues\s(returning\sfalse\swhen\suser\sexists,\strue\son\ssecond\sdelete\sattempt).\n\n**Where:**\s`UserRepositoryDeleteByEmailTest.java`\sat\slines\s35,\s57,\sand\s109\sin\s`com.example.demo.repository`\n\n**Why:**\sThe\s`deleteByEmail()`\srepository\smethod\shas\sinverted/incorrect\sreturn\slogic:\n1.\sReturns\s`false`\swhen\sdeleting\sexisting\suser\s(should\sreturn\s`true`)\n2.\sReturns\s`true`\son\ssecond\sdelete\sof\ssame\semail\s(should\sreturn\s`false`)\n3.\sCase-sensitive\semail\smatching\smay\salso\sbe\san\sissue\n\n**Investigate:**\n-\sCheck\s`UserRepository.deleteByEmail()`\simplementation\s-\slikely\sreturns\sopposite\sboolean\sor\salways\sreturns\ssame\svalue\n-\sVerify\semail\slookup\suses\scase-insensitive\scomparison\n-\sReview\sif\smethod\schecks\sexistence\sbefore\sdeletion\n-\sEnsure\sreturn\svalue\sreflects\sactual\sdeletion\ssuccess/failure,
+
+roost_feedback [08/12/2025, 1:00:06 PM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\s`deleteByEmail()`\smethod\sin\sUserRepository\sreturns\sincorrect\sboolean\svalues\s-\sreturning\s`true`\swhen\sit\sshould\sreturn\s`false`\sand\svice\sversa.\n\n**Where:**\s`UserRepositoryDeleteByEmailTest.java`\s(lines\s207,\s231,\s288)\sin\s`com.example.demo.repository`\n\n**Why:**\sThe\s`deleteByEmail()`\simplementation\shas\sinverted\sreturn\slogic:\n1.\sReturns\s`false`\swhen\suser\sexists\s(should\sreturn\s`true`)\n2.\sReturns\s`true`\son\ssecond\sdelete\sattempt\s(should\sreturn\s`false`)\n3.\sCase-sensitive\semail\smatching\smay\salso\sbe\san\sissue\n\n**Investigate:**\n-\sCheck\s`deleteByEmail()`\smethod\'s\sreturn\sstatement\slogic\sin\sUserRepository\n-\sVerify\semail\slookup\suses\scase-insensitive\scomparison\n-\sEnsure\smethod\sreturns\s`true`\sonly\swhen\sdeletion\sactually\soccurs\n-\sReview\sif\sdelete\soperation\sproperly\schecks\sexistence\sbefore\sreturning\sresult
 */
 
 // ********RoostGPT********
@@ -199,14 +201,10 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("valid")
 	void deleteByEmailWhenUserExistsReturnsTrue() {
-		// Arrange
 		String email = "alice@example.com";
-		// Verify user exists before deletion
 		Optional<User> existingUser = userRepository.findByEmail(email);
 		assertTrue(existingUser.isPresent(), "User should exist before deletion");
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertTrue(result, "deleteByEmail should return true when user exists");
 		Optional<User> deletedUser = userRepository.findByEmail(email);
 		assertTrue(deletedUser.isEmpty(), "User should not be found after deletion");
@@ -215,25 +213,18 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("invalid")
 	void deleteByEmailWhenUserDoesNotExistReturnsFalse() {
-		// Arrange
 		String email = "nonexistent@example.com";
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertFalse(result);
 	}
 
 	@Test
 	@Tag("valid")
 	void deleteByEmailWithDifferentCaseReturnsTrue() {
-		// Arrange
 		String email = "ALICE@EXAMPLE.COM";
-		// Verify user exists with original case
 		Optional<User> existingUser = userRepository.findByEmail("alice@example.com");
 		assertTrue(existingUser.isPresent(), "User should exist before deletion");
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertTrue(result, "deleteByEmail should handle case-insensitive email matching");
 		Optional<User> deletedUser = userRepository.findByEmail("alice@example.com");
 		assertTrue(deletedUser.isEmpty());
@@ -242,35 +233,26 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("invalid")
 	void deleteByEmailWithNullEmailReturnsFalse() {
-		// Arrange & Act
 		boolean result = userRepository.deleteByEmail(null);
-		// Assert
 		assertFalse(result);
 	}
 
 	@Test
 	@Tag("boundary")
 	void deleteByEmailWithEmptyStringReturnsFalse() {
-		// Arrange
 		String email = "";
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertFalse(result);
 	}
 
 	@Test
 	@Tag("valid")
 	void deleteByEmailDecreasesUserCount() {
-		// Arrange
 		long initialCount = userRepository.count();
 		String email = "bob@example.com";
-		// Verify user exists
 		Optional<User> existingUser = userRepository.findByEmail(email);
 		assertTrue(existingUser.isPresent(), "User should exist before deletion");
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertTrue(result, "deleteByEmail should return true for existing user");
 		assertEquals(initialCount - 1, userRepository.count());
 	}
@@ -278,45 +260,33 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("boundary")
 	void deleteByEmailWithWhitespaceOnlyReturnsFalse() {
-		// Arrange
 		String email = "   ";
-		// Act
 		boolean result = userRepository.deleteByEmail(email);
-		// Assert
 		assertFalse(result);
 	}
 
 	@Test
 	@Tag("valid")
 	void deleteByEmailTwiceReturnsFalseOnSecondAttempt() {
-		// Arrange
 		String email = "charlie@example.com";
-		// Verify user exists before first deletion
 		Optional<User> existingUser = userRepository.findByEmail(email);
 		assertTrue(existingUser.isPresent(), "User should exist before first deletion");
-		// Act
 		boolean firstResult = userRepository.deleteByEmail(email);
-		// Verify user no longer exists after first deletion
+		assertTrue(firstResult, "First delete should return true");
 		Optional<User> afterFirstDelete = userRepository.findByEmail(email);
 		assertTrue(afterFirstDelete.isEmpty(), "User should not exist after first deletion");
 		boolean secondResult = userRepository.deleteByEmail(email);
-		// Assert
-		assertTrue(firstResult, "First delete should return true");
 		assertFalse(secondResult, "Second delete should return false since user no longer exists");
 	}
 
 	@Test
 	@Tag("valid")
 	void deleteByEmailForNewlyAddedUserReturnsTrue() {
-		// Arrange
 		User newUser = new User("New User", "newuser@example.com", "USER");
 		userRepository.save(newUser);
-		// Verify user was saved
 		Optional<User> savedUser = userRepository.findByEmail("newuser@example.com");
 		assertTrue(savedUser.isPresent(), "New user should be saved");
-		// Act
 		boolean result = userRepository.deleteByEmail("newuser@example.com");
-		// Assert
 		assertTrue(result, "deleteByEmail should return true for newly added user");
 		Optional<User> deletedUser = userRepository.findByEmail("newuser@example.com");
 		assertTrue(deletedUser.isEmpty());
@@ -325,15 +295,11 @@ class UserRepositoryDeleteByEmailTest {
 	@Test
 	@Tag("valid")
 	void deleteByEmailMatchesMixedCaseStoredEmail() {
-		// Arrange
 		User mixedCaseUser = new User("Mixed Case User", "MixedCase@Example.COM", "USER");
 		userRepository.save(mixedCaseUser);
-		// Verify user was saved (check with original case)
 		Optional<User> savedUser = userRepository.findByEmail("MixedCase@Example.COM");
 		assertTrue(savedUser.isPresent(), "Mixed case user should be saved");
-		// Act
 		boolean result = userRepository.deleteByEmail("mixedcase@example.com");
-		// Assert
 		assertTrue(result, "deleteByEmail should handle mixed case email matching");
 	}
 
