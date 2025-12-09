@@ -166,6 +166,8 @@ Validation:
 
 
 roost_feedback [09/12/2025, 6:05:56 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sUnit\stest\sassertion\sfailed\s-\sexpected\s3\sproducts\sbut\sfound\sonly\s2\swhen\squerying\sproducts\sby\sprice\srange\safter\sadding\sa\snew\sproduct.\n\n**Where:**\s`ProductRepositoryFindByPriceRangeTest.java:165`\sin\smethod\s`findProductsAfterAddingNewProductInRange`\n\n**Why:**\sThe\snewly\sadded\sproduct\swithin\sthe\sprice\srange\sis\snot\sbeing\sreturned\sby\sthe\s`findByPriceRange`\squery.\sLikely\scauses:\s(1)\sproduct\snot\spersisted/flushed\sbefore\squery,\s(2)\sprice\srange\sboundary\scondition\sissue,\sor\s(3)\stransaction\sisolation\sproblem.\n\n**Investigate:**\n-\sVerify\s`save()`\sis\sfollowed\sby\s`flush()`\sbefore\squery\sexecution\n-\sCheck\sprice\srange\squery\sboundaries\s(inclusive\svs\sexclusive)\n-\sConfirm\snew\sproduct\s\sprice\sfalls\swithin\stest\s\sexpected\srange\n-\sReview\s`@Transactional`\stest\sconfiguration,
+
+roost_feedback [09/12/2025, 6:13:16 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sUnit\stest\sassertion\sfailed\s-\sexpected\s3\sproducts\sbut\sfound\sonly\s2\swhen\squerying\sproducts\sby\sprice\srange\safter\sadding\sa\snew\sproduct.\n\n**Where:**\s`ProductRepositoryFindByPriceRangeTest.java:346`\sin\smethod\s`findProductsAfterAddingNewProductInRange`\n\n**Why:**\sThe\snewly\sadded\sproduct\seither\swasn\t\spersisted\scorrectly,\sfalls\soutside\sthe\sprice\srange\sfilter,\sor\sthe\srepository\squery\shas\sa\sboundary\scondition\sbug\s(off-by-one\sor\sexclusive\svs\sinclusive\srange).\n\n**Investigate:**\n1.\sVerify\sthe\snew\sproduct\s\sprice\sfalls\swithin\sthe\squery\'s\smin/max\srange\n2.\sCheck\sif\s`save()`\swas\scalled\sand\stransaction\scommitted\sbefore\squery\n3.\sReview\s`findByPriceRange`\squery\sfor\sboundary\sconditions\s(<\svs\s<=)\n4.\sConfirm\stest\sdata\ssetup\s-\sensure\s2\sinitial\sproducts\sexist\sin\srange\n\nprint\sall\sproduct\sand\sresult.
 */
 
 // ********RoostGPT********
@@ -341,8 +343,24 @@ class ProductRepositoryFindByPriceRangeTest {
 		productRepository.save(tablet);
 		BigDecimal minPrice = new BigDecimal("200.00");
 		BigDecimal maxPrice = new BigDecimal("400.00");
+		
+		// Print all products for debugging
+		List<Product> allProducts = productRepository.findByPriceRange(new BigDecimal("0"), new BigDecimal("100000"));
+		System.out.println("All products in repository:");
+		for (Product p : allProducts) {
+			System.out.println("  - " + p.getName() + ": $" + p.getPrice());
+		}
+		
 		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		
+		// Print result for debugging
+		System.out.println("Products in range $" + minPrice + " - $" + maxPrice + ":");
+		for (Product p : result) {
+			System.out.println("  - " + p.getName() + ": $" + p.getPrice());
+		}
+		System.out.println("Result size: " + result.size());
+		
 		// Assert
 		assertNotNull(result);
 		assertEquals(2, result.size());
