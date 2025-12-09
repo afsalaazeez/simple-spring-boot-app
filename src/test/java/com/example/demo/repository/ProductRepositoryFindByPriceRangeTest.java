@@ -196,6 +196,8 @@ Execution:
 Validation:
   The assertion confirms that when the maximum price threshold is below all inventory prices, no products are returned. This is important for handling unrealistic price range queries.
 
+
+roost_feedback [09/12/2025, 12:14:33 PM]:Code generate with runtime error\r\n
 */
 
 // ********RoostGPT********
@@ -222,47 +224,45 @@ class ProductRepositoryFindByPriceRangeTest {
 	@BeforeEach
 	void setUp() {
 		productRepository = new ProductRepository();
+		productRepository.save(new Product("Mouse", "Wireless mouse", new BigDecimal("29.99"), 50));
+		productRepository.save(new Product("Keyboard", "Mechanical keyboard", new BigDecimal("89.99"), 30));
+		productRepository.save(new Product("Headphones", "Noise cancelling", new BigDecimal("199.99"), 20));
+		productRepository.save(new Product("Monitor", "27 inch 4K", new BigDecimal("399.99"), 15));
+		productRepository.save(new Product("Webcam", "HD webcam", new BigDecimal("59.99"), 40));
 	}
 
 	@Test
 	@Tag("valid")
 	void findProductsWithinValidPriceRange() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("50.00");
 		BigDecimal maxPrice = new BigDecimal("250.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
-		assertEquals(2, result.size());
+		assertEquals(3, result.size());
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Keyboard")));
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Headphones")));
+		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Webcam")));
 	}
 
 	@Test
 	@Tag("boundary")
 	void findProductsWithExactBoundaryPrices() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("29.99");
 		BigDecimal maxPrice = new BigDecimal("89.99");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
-		assertEquals(2, result.size());
+		assertEquals(3, result.size());
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Mouse")));
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Keyboard")));
+		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Webcam")));
 	}
 
 	@Test
 	@Tag("boundary")
 	void findProductsWithSameMinAndMaxPrice() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("199.99");
 		BigDecimal maxPrice = new BigDecimal("199.99");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertEquals(1, result.size());
 		assertEquals("Headphones", result.get(0).getName());
@@ -271,12 +271,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("valid")
 	void findProductsWithNoMatchesInRange() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("1000.00");
 		BigDecimal maxPrice = new BigDecimal("2000.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
 	}
@@ -284,12 +281,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("valid")
 	void findProductsWithVeryWidePriceRange() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("0.00");
 		BigDecimal maxPrice = new BigDecimal("10000.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertEquals(5, result.size());
 	}
@@ -297,12 +291,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("boundary")
 	void findProductsWithZeroAsMinimumPrice() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("0.00");
 		BigDecimal maxPrice = new BigDecimal("50.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertEquals(1, result.size());
 		assertEquals("Mouse", result.get(0).getName());
@@ -311,15 +302,14 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("boundary")
 	void findProductsWithEmptyRepository() {
-		// Arrange
-		for (long i = 1; i <= 5; i++) {
-			productRepository.deleteById(i);
+		ProductRepository emptyRepo = new ProductRepository();
+		List<Product> allProducts = emptyRepo.findAll();
+		for (Product p : allProducts) {
+			emptyRepo.deleteById(p.getId());
 		}
 		BigDecimal minPrice = new BigDecimal("0.00");
 		BigDecimal maxPrice = new BigDecimal("1000.00");
-		// Act
-		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
+		List<Product> result = emptyRepo.findByPriceRange(minPrice, maxPrice);
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
 	}
@@ -327,14 +317,11 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("integration")
 	void findProductsAfterAddingNewProductInRange() {
-		// Arrange
 		Product newProduct = new Product("Tablet", "Android tablet", new BigDecimal("150.00"), 10);
 		productRepository.save(newProduct);
 		BigDecimal minPrice = new BigDecimal("100.00");
 		BigDecimal maxPrice = new BigDecimal("200.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertEquals(2, result.size());
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Headphones")));
@@ -344,12 +331,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("boundary")
 	void findProductsWithNarrowRangeBetweenExistingPrices() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("30.00");
-		BigDecimal maxPrice = new BigDecimal("89.00");
-		// Act
+		BigDecimal maxPrice = new BigDecimal("59.98");
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
 	}
@@ -357,14 +341,11 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("valid")
 	void findProductsWithHighPrecisionDecimalPrices() {
-		// Arrange
 		Product newProduct = new Product("Test Product", "Test description", new BigDecimal("89.990"), 5);
 		productRepository.save(newProduct);
 		BigDecimal minPrice = new BigDecimal("89.99");
 		BigDecimal maxPrice = new BigDecimal("89.99");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertTrue(result.size() >= 1);
 		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Keyboard")));
@@ -373,12 +354,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("boundary")
 	void findProductsWithMinPriceGreaterThanAllProducts() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("1500.00");
 		BigDecimal maxPrice = new BigDecimal("2000.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
 	}
@@ -386,12 +364,9 @@ class ProductRepositoryFindByPriceRangeTest {
 	@Test
 	@Tag("boundary")
 	void findProductsWithMaxPriceLessThanAllProducts() {
-		// Arrange
 		BigDecimal minPrice = new BigDecimal("1.00");
 		BigDecimal maxPrice = new BigDecimal("20.00");
-		// Act
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
-		// Assert
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
 	}
