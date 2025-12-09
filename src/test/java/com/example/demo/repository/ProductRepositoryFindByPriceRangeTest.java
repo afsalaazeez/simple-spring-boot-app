@@ -164,6 +164,8 @@ Execution:
 Validation:
   The assertion confirms that the repository's ConcurrentHashMap correctly reflects newly added products in subsequent queries. This validates the dynamic nature of the product catalog.
 
+
+roost_feedback [09/12/2025, 7:34:51 AM]:Modify\sCode\sto\sfix\sthis\serror\nSuccessfully\scompiled\sbut\sfailed\sat\sruntime.\n\nError\sAnalysis:\n##\sError\sAnalysis\sSummary\n\n**What\sFailed:**\sJUnit\sassertion\sfailed\s-\s`assertTrue`\sreturned\sfalse\swhen\stesting\sproduct\srepository\s\sprice\srange\squery\safter\sadding\sa\snew\sproduct.\n\n**Where:**\s`ProductRepositoryFindByPriceRangeTest.java:183`\sin\smethod\s`findProductsAfterAddingNewProductInRange`\n\n**Why:**\sAfter\sadding\sa\snew\sproduct\swithin\sthe\sprice\srange\s($200-$400),\sthe\stest\sexpected\sto\sfind\sit\sin\squery\sresults\sbut\sthe\sassertion\schecking\sfor\sits\spresence\sreturned\sfalse.\sLikely\scauses:\sproduct\snot\spersisted,\stransaction\snot\scommitted,\sor\squery\scache\sreturning\sstale\sdata.\n\n**Investigate:**\n-\sCheck\sif\s`save()`\sis\scalled\sand\stransaction\sis\scommitted\sbefore\squery\n-\sVerify\stest\sisolation\s-\sensure\s`@Transactional`\srollback\sisn\t\saffecting\sresults\n-\sCheck\sif\srepository\suses\scaching\sthat\sneeds\srefresh\n-\sConfirm\sthe\snew\sproduct\'s\sprice\sfalls\swithin\sthe\sexact\srange\sboundaries\s(inclusive/exclusive),
 */
 
 // ********RoostGPT********
@@ -336,7 +338,7 @@ class ProductRepositoryFindByPriceRangeTest {
 	void findProductsAfterAddingNewProductInRange() {
 		// Arrange
 		Product tablet = new Product("Tablet", "Android tablet", new BigDecimal("299.99"), 10);
-		productRepository.save(tablet);
+		Product savedTablet = productRepository.save(tablet);
 		BigDecimal minPrice = new BigDecimal("200.00");
 		BigDecimal maxPrice = new BigDecimal("400.00");
 
@@ -359,10 +361,14 @@ class ProductRepositoryFindByPriceRangeTest {
 
 		// Assert
 		assertNotNull(result);
-		assertEquals(2, result.size());
-		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Tablet")));
-		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Headphones")));
-		assertTrue(result.stream().noneMatch(p -> p.getName().equals("Keyboard")));
+		assertNotNull(savedTablet.getId(), "Saved tablet should have an ID assigned");
+		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Tablet")), 
+				"Tablet should be found in the price range");
+		assertTrue(result.stream().anyMatch(p -> p.getName().equals("Headphones")), 
+				"Headphones should be found in the price range");
+		assertTrue(result.stream().noneMatch(p -> p.getName().equals("Keyboard")), 
+				"Keyboard should not be in this price range");
+		assertEquals(2, result.size(), "Should find exactly 2 products in range $200-$400");
 	}
 
 }
