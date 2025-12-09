@@ -198,6 +198,8 @@ Validation:
 
 
 roost_feedback [09/12/2025, 12:14:33 PM]:Code generate with runtime error\r\n
+
+roost_feedback [09/12/2025, 12:17:30 PM]:generate code with runtime error\r\n
 */
 
 // ********RoostGPT********
@@ -369,6 +371,34 @@ class ProductRepositoryFindByPriceRangeTest {
 		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
 		assertNotNull(result);
 		assertTrue(result.isEmpty());
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsWithNullMinPrice() {
+		BigDecimal minPrice = null;
+		BigDecimal maxPrice = new BigDecimal("100.00");
+		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		assertNotNull(result);
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsWithNullMaxPrice() {
+		BigDecimal minPrice = new BigDecimal("10.00");
+		BigDecimal maxPrice = null;
+		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		assertNotNull(result);
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsFromNullRepository() {
+		ProductRepository nullRepo = null;
+		BigDecimal minPrice = new BigDecimal("10.00");
+		BigDecimal maxPrice = new BigDecimal("100.00");
+		List<Product> result = nullRepo.findByPriceRange(minPrice, maxPrice);
+		assertNotNull(result);
 	}
 
 }
