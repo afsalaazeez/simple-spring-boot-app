@@ -200,6 +200,8 @@ Validation:
 roost_feedback [09/12/2025, 12:14:33 PM]:Code generate with runtime error\r\n
 
 roost_feedback [09/12/2025, 12:17:30 PM]:generate code with runtime error\r\n
+
+roost_feedback [09/12/2025, 12:24:22 PM]:I want to test code with runtime error please provide wrong code
 */
 
 // ********RoostGPT********
@@ -399,6 +401,38 @@ class ProductRepositoryFindByPriceRangeTest {
 		BigDecimal maxPrice = new BigDecimal("100.00");
 		List<Product> result = nullRepo.findByPriceRange(minPrice, maxPrice);
 		assertNotNull(result);
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsWithArrayIndexOutOfBounds() {
+		BigDecimal minPrice = new BigDecimal("50.00");
+		BigDecimal maxPrice = new BigDecimal("250.00");
+		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		Product product = result.get(100);
+		assertNotNull(product);
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsWithClassCastException() {
+		BigDecimal minPrice = new BigDecimal("50.00");
+		BigDecimal maxPrice = new BigDecimal("250.00");
+		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		Object obj = "This is a string";
+		Product product = (Product) obj;
+		assertNotNull(product);
+	}
+
+	@Test
+	@Tag("error")
+	void findProductsWithDivisionByZero() {
+		BigDecimal minPrice = new BigDecimal("50.00");
+		BigDecimal maxPrice = new BigDecimal("250.00");
+		List<Product> result = productRepository.findByPriceRange(minPrice, maxPrice);
+		int divisor = 0;
+		int quotient = result.size() / divisor;
+		assertEquals(0, quotient);
 	}
 
 }
